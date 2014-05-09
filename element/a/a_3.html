@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>a element</title>
+<meta charset="utf-8">
+<style>
+body > div { background: navy; color: yellow; }
+@media screen, print, handheld, tv {
+  /* should be ignored by non-visual browsers */
+  .tag-cloud > li > span { display: none; }
+  .tag-cloud > li { display: inline; }
+  .tag-cloud-1 { font-size: 0.7em; }
+  .tag-cloud-2 { font-size: 0.9em; }
+  .tag-cloud-3 { font-size: 1.1em; }
+  .tag-cloud-4 { font-size: 1.3em; }
+  .tag-cloud-5 { font-size: 1.5em; }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+   <h1>My toys</h1>
+  </header>
+  <nav>
+   <p><a href="/">Home</a></p>
+   <p><a href="/contact">Contact</a></p>
+  </nav>
+  <p>I really like my chained book and my telephone. I'm not such a
+  fan of my big ball.</p>
+  <p>Another toy I like is my mirror.</p> 
+  <footer>
+   <p>© copyright 2010 by the boy</p>
+  </footer>
+
+
+
+  <!-- 앞의 예제가 블로그 포스트로 사용된 경우입니다.-->
+  <header>
+   <h1>The Boy Blog</h1>
+  </header>
+  <nav>
+   <p><a href="/">Home</a></p>
+   <p><a href="/contact">Contact</a></p>
+  </nav>
+  <article>
+   <header>
+    <h1>My toys</h1>
+    <p>Published August 4th</p>
+   </header>
+   <p>I really like my chained book and my telephone. I'm not such a
+   fan of my big ball.</p>
+   <p>Another toy I like is my mirror.</p>
+  </article> 
+  <footer>
+   <p>© copyright 2010 by the boy</p>
+  </footer>
+
+
+
+  <!-- 메인 컨텐츠를 마크업하는데에는 section 요소가 적합 -->
+  <header>
+   <h1>Chapter 2: My Toys</h1>
+  </header>
+  <nav>
+   <p><a href="/">Front Page</a></p>
+   <p><a href="/toc">Table of Contents</a></p>
+   <p><a href="/c1">Chapter 1</a> — <a href="/c3">Chapter 3</a></p>
+  </nav>
+  <section>
+   <p>I really like my chained book and my telephone. I'm not such a
+   fan of my big ball.</p>
+   <p>Another toy I like is my mirror.</p>
+  </section> 
+  <footer>
+   <p>© copyright 2010 by the boy</p>
+  </footer>
+
+
+
+ <!-- 메인 컨텐츠를 마크업하기에 article도, section도 적합하지 않지만 어떤 명시적인 요소가 필요 - 예를 들어, 스타일을 줄 목적으로 - 하다면, 그러한 경우에는 div 요소를 사용할 수 있습니다.-->
+<header>
+   <h1>My toys</h1>
+  </header>
+  <nav>
+   <p><a href="/">Home</a></p>
+   <p><a href="/contact">Contact</a></p>
+  </nav>
+  <div>
+   <p>I really like my chained book and my telephone. I'm not such a
+   fan of my big ball.</p>
+   <p>Another toy I like is my mirror.</p>
+  </div> 
+  <footer>
+   <p>© copyright 2010 by the boy</p>
+  </footer>
+
+
+
+<!-- 3개의 태그가 짧은 태그 클라우드 안에 포함 -->
+<ul class="tag-cloud">
+ <li class="tag-cloud-4"><a title="28 instances" href="/t/apple">apple</a> <span>(popular)</span>
+ <li class="tag-cloud-2"><a title="6 instances"  href="/t/kiwi">kiwi</a> <span>(rare)</span>
+ <li class="tag-cloud-5"><a title="41 instances" href="/t/pear">pear</a> <span>(very popular)</span>
+</ul>
+
+
+
+<!-- 대화, 회의시간, 채팅 로그, 영화의 대사, 기타 이와 흡사하게 서로 다른 인물들이 참여하는 상황에 대한 마크업을 정의하지 않습니다. -->
+<p> <time>14:22</time> <b>egof</b> I'm not that nerdy, I've only seen 30% of the star trek episodes
+<p> <time>14:23</time> <b>kaj</b> if you know what percentage of the star trek episodes you have seen, you are inarguably nerdy
+<p> <time>14:23</time> <b>egof</b> it's unarguably
+<p> <time>14:23</time> <i>* kaj blinks</i>
+<p> <time>14:24</time> <b>kaj</b> you are not helping your case
+
+
+
+
+<!-- 짧은 인라인 주석이라면, title 속성을 사용해야 합니다.-->
+<p> <b>Customer</b>: Hello! I wish to register a complaint. Hello. Miss?
+<p> <b>Shopkeeper</b>: <span title="Colloquial pronunciation of 'What do you'" 
+>Watcha</span> mean, miss?
+<p> <b>Customer</b>: Uh, I'm sorry, I have a cold. I wish to make a complaint.
+<p> <b>Shopkeeper</b>: Sorry, <span title="This is, of course, a lie.">we're
+closing for lunch</span>.
+
+
+
+
+<!-- 더 긴 주석을 위해서는 a 요소를 사용해서 문서의 뒤에 나올 요소를 가리켜야 합니다. 이것의 표현은, 대괄호 안에 링크의 숫자가 나타나는 형태 -->
+
+<p> Announcer: Number 16: The <i>hand</i>.
+<p> Interviewer: Good evening. I have with me in the studio tonight
+Mr Norman St John Polevaulter, who for the past few years has been
+contradicting people. Mr Polevaulter, why <em>do</em> you
+contradict people?
+<p> Norman: I don't. <sup><a href="#fn1" id="r1">[1]</a></sup>
+<p> Interviewer: You told me you did!
+... 
+<section>
+ <p id="#fn2"><a href="#r1">[1]</a> This is, naturally, a lie,
+ but paradoxically if it were true he could not say so without
+ contradicting the interviewer and thus making it false.</p>
+</section>
+
+
+
+
+
+<!-- 특정한 단어나 구문이 아니라 섹션 전체에 대해 적용되는 긴 주석과 사이드노트에 대해서는, aside 요소를 사용해야 합니다. -->
+
+<p> <span class="speaker">Customer</span>: I will not buy this record, it is scratched.
+<p> <span class="speaker">Shopkeeper</span>: I'm sorry?
+<p> <span class="speaker">Customer</span>: I will not buy this record, it is scratched.
+<p> <span class="speaker">Shopkeeper</span>: No no no, this's'a tobacconist's.
+<aside>
+ <p>In 1970, the British Empire lay in ruins, and foreign
+ nationalists frequented the streets — many of them Hungarians
+ (not the streets — the foreign nationals). Sadly, Alexander
+ Yalt has been publishing incompetently-written phrase books.
+</aside>
+
+
+
+<!-- 그림이나 표에 대해서는, 각주를 figcaption, caption 요소, 혹은 그것을 둘러싼 산문에서 제공할 수 있습니다.-->
+<figure>
+ <figcaption>Table 1. Alternative activities for knights.</figcaption>
+ <table>
+  <tr>
+   <th> Activity
+   <th> Location
+   <th> Cost
+  <tr>
+   <td> Dance
+   <td> Wherever possible
+   <td> £0<sup><a href="#fn1">1</a></sup>
+  <tr>
+   <td> Routines, chorus scenes<sup><a href="#fn2">2</a></sup>
+   <td> Undisclosed
+   <td> Undisclosed
+  <tr>
+   <td> Dining<sup><a href="#fn3">3</a></sup>
+   <td> Camelot
+   <td> Cost of ham, jam, and spam<sup><a href="#fn4">4</a></sup>
+ </table>
+ <p id="fn1">1. Assumed.</p>
+ <p id="fn2">2. Footwork impeccable.</p>
+ <p id="fn3">3. Quality described as "well".</p>
+ <p id="fn4">4. A lot.</p>
+</figure>
+
+
+
+
+
+
+
+</body>
+</html>
