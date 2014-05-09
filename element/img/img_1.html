@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>img element</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+<!-- alt -->
+<!-- a요소 일때 -->
+<a href="profile.html"><img src="me.jpg" alt="프로필"></a>
+
+<!-- button요소 일때 -->
+<button name="next"><img src="right-arrow.png" alt="다음"></button>
+
+<!-- 여러개의 이미지를 넣을때 -->
+<button name="set">
+	<img src="set-left.png" alt="SET">
+	<img src="set-middle.png" alt="">
+	<img src="set-right.png" alt="">
+</button>
+
+
+<!-- 한 문자씩을 각 그림에 나타낼 때 -->
+<button name="set">
+	<img src="set-left.png" alt="S">
+	<img src="set-middle.png" alt="E">
+	<img src="set-right.png" alt="T">
+</button>
+
+
+<!-- 적절한 alt컨텐츠 속성의 텍스트 예 -->
+<p>처음으로 도쿄에 가보았다 역시 가장 인상에 남았던 것은 도쿄타워였다</p>
+<img src="tokotower.png" alt="푸른 하늘을 향해 도쿄타워가 우뚝 서있다">
+<p>이렇게 웅대한 건물은 처음이다</p>
+
+
+<!-- 텍스트가 첨부된 아이콘의 마크업 예 -->
+<p><a href="../"><img src="feedicon.png" alt="">피드</a></p>
+
+
+
+<!-- 텍스트를 첨부하지 않은 아이콘의 마크업 예 -->
+<p>이 기능은 다음과 같은 브라우저가 지원하고 있습니다</p>
+<ul>
+	<li><img src="firefox.png" alt="firefox">
+	<li><img src="safari.png" alt="safari">
+	<li><img src="chrome.png" alt="chrome">
+</ul>	
+
+<!-- 회사 로고의 마크업 예 -->
+<header>
+	<img src="logo.png" alt="오렌지 컴퓨터 주식회사">
+</header>
+
+
+
+<!-- 로고 디자인을 주제로 했을 떄의 마크업 -->
+<article>
+	<h1>당사 로고 마크의 의미</h1>
+	<p>당사에는 여러분에게 익숙한 로고 마크가 있습니다</p>
+	<img src="logo.png" alt="주황색의 귤을 옆에서 본 마크입니다 위에 녹색의 줄기가 있고 그 오른쪽에는 녹생의 잎이 1장 붙어 있습니다">
+	<p>원래 당사의 창업자는 귤 농사를 지었습니다</p>
+</article>
+
+
+<!-- 장식적으로 사용된 로고의 마크업 예 -->
+<article>
+	<h1>오렌지 컴퓨터 주식회사 코스닥 상장</h1>
+	<aside>
+		<img src="orange.png" alt="">
+	</aside>
+	<p>넷북으로 알려진 오렌지 컴퓨터 주식회사가 코스닥에 상장되었습니다</p>
+</article>
+
+
+<!-- 워드 아트 마크업의 예 -->
+<h1><img src="title.png" alt="꿈동산 완구점 본점"></h1>
+
+
+<!-- 보충 이미지의 마크업 예 -->
+<p>당사의 매출은 2006년부터 전년대비 10%정도씩 늘어나 2009년애는 전년대비 50% 성장을 달성하였습니다</p>
+<img src="graphy.png" alt="">
+
+
+
+<!-- 관련 이미지의 마크업 예 -->
+<h1>출근 러시</h1>
+<aside>
+	<img src="rash.png" alt="">
+</aside>
+<p>서울의 출근 러시는 굉장하내요 매일 시달리면서 아침부터 기진맥진이네요</p>
+
+
+<!-- 분할이미지의 마크업 예 -->
+<h1><img src="logo1.png" alt="꿈동산완구점"><img src="logo2.png" alt=""></h1>
+
+
+
+<!-- 링크가 있는 분할 이미지의 마크업 예 -->
+<p>
+	<a href="chapter1.html">
+		<img src="prev.png" alt="이전">
+	</a>
+		<img src="middle.png" alt="">
+	<a href="chapter2.html">
+		<img src="next.png" alt="이후">
+	</a>
+</p>
+
+
+
+
+<!-- 원그래프의 마크업 예 -->
+<p>해당 사이크를 방문한 사용자가 이용한 브라우저의 비율은<a href="#browser-share">다음그림</a>과 같습니다</p>
+<figure id="browser-share">
+	<img src="browser-share.png" alt="firefox의 점유울이 49%로 거의 절반 가까이 점하고 있습니다 그외 ie가 20%,chrome이 12%,safari가 10%로 그뒤를 있고 있습니다">
+	<figcaption>해당 사이트 방문자 브라우저 점유율</figcaption>
+</figure>
+<p>이 결과는 예상외였습니다. 그림과 같이 firefox사용이 가장 많았습니다</p>
+
+
+
+
+<!-- title속성을 사용한 마크업 예제 -->
+<p><img src="browser-share.png" title="해당 사이트 방문자 브라우저 점유율" alt="firefox의 점유울이 40%로 거의 절반 가까이 점하고 있습니다. 그외 ieㅏ가 20%로, chrome이 12%, safari가 10%로 그뒤를 잇고 있습니다"></p>
+
+
+
+<!-- 모양이 주제가 된 도형이 마크업 예 -->
+<img src="md.png" alt="수학적인 의미에서 만델브로 집합을 그린다면 집합안의 부분과 밖의 부분 두 가지만 의미가 있으며.........">
+
+
+
+
+<!-- 내용을 사전에 알수 없는 이미지 -->
+<!-- 1. title콘텐츠 속성에 텍스트가 지정되어 있을 때 -->
+<img src="mm.png" title="2010-03-21의 한라산 풍경">
+
+<!-- img요소가 dt요소를 동반한 figure요소안에 있을때, 다만
+	dt요소에는 제대로 된 텍스트가 들어 있어야함 -->
+<article>
+	<h1>비눗방울이 우리 주변 곳곳에 흩날리고 있었습니다.</h1>
+	<img src="mm.png">
+</article>
+
+
+<!-- 섹션안에 단락이 하나밖에 없고 img요소가 그 단락의 안에 있으며
+그섹션에는 alt속성이 생략된 img요소가 단 하나뿐이고 섹션에 제목이 있을때 -->
+<article>
+	<h1>비눗방울이 우리 주변 곳곳에 흩날리고 있었습니다.</h1>
+	<img src="mm.png">
+</article>
+
+
+<!-- 캡차의 마크업 예제 -->
+<p>
+	<label>표시된 문자를 텍스트 입력필드에 입력해 주십시오
+		<img src="mm.png" title="캡쳐">
+		<input type="text" name="chapcha">
+	</label>
+</p>
+
+
+<!-- alt생략해도 되는데 에러 나요-->
+
+
+
+
+
+
+
+
+</body>
+</html>
+

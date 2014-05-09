@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>embed element</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+
+<embed src="catgame.swf">
+If the user does not have the plugin (for example if the plugin vendor doesn't support the user's platform), then the user will be unable to use the resource.
+
+To pass the plugin a parameter "quality" with the value "high", an attribute can be specified:
+
+<embed src="catgame.swf" quality="high">
+This would be equivalent to the following, when using an object element instead:
+
+<object data="catgame.swf">
+ <param name="quality" value="high">
+</object>
+
+
+</body>
+</html>
+
+
