@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>input element</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+<!-- URL state-->
+<input type="url" name="location" list="urls">
+<datalist id="urls">
+	<option label="MIME: Format of Internet Message Bodies" value="http://tools.ietf.org/html/rfc2045">
+	<option label="HTML 4.01 Specification" value="http://www.w3.org/TR/html4/">
+</datalist>
+
+
+
+<!-- Date and Time state -->
+<fieldset>
+	<legend>add meeting</legend>
+	<p>
+		<label>meeting name: <input type="text" name="meeting.label"></label>
+	</p>
+	<p>
+		<label>Meeting time: <input type=datetime name="meeting.start"></label>
+	</p>
+</fieldset>
+
+
+
+<!-- Local Date and Time state -->
+<fieldset>
+	<legend>destination</legend>
+	<p>
+		<label>airport:<input type="text" name="to" list="airports"></label>
+	</p>	
+	<p>
+		<label>departure time:<input type="datetime-local" name="totime" step="3600"></label>
+	</p>
+</fieldset>
+<datalist id="airports">
+	<option value="atl" label="atlanta">
+	<option value="men" label="memphis">
+</datalist>
+
+
+
+
+
+</body>
+</html>
