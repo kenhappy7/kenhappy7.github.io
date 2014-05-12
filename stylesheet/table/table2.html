@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table element</title>
+<style>
+body { font-size: small; font-family: Arial, '맑은 고딕';}
+table,th,td{margin:0;padding:0;}
+
+table * {font-size: 11px;} 
+table { width: 100%; border-collapse: collapse; border: 1px solid #ddd; border-bottom: none;}
+thead th { height: 28px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; background-color: #f9f9f9;}
+
+
+tbody td { text-align: center; border-left: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+tbody th { border-bottom: 1px solid #ddd; }
+
+tbody tr th + td { text-align: right;}
+tbody td, 
+tbody td { text-align: left; padding: 5px;}
+
+tbody tr.up { color: red; }
+tbody tr.down { color: blue; }
+
+
+col { width: 25%;}
+
+</style>
+</head>
+<body>
+<div class="section">
+	<table summary="">
+		<caption><span></span></caption>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>통화명</th>
+				<th>매매기준율</th>
+				<th>전일대비</th>
+				<th class="last">통화율</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="up">
+				<th>USA</th>
+				<td>1,3333</td>
+				<td>2.00</td>
+				<td>+0.19%</td>
+			</tr>
+			<tr class="down">
+				<th>KOR</th>
+				<td>1,3333</td>
+				<td>2.00</td>
+				<td>+0.19%</td>
+			</tr>
+			<tr class="up">
+				<th>USA</th>
+				<td>1,3333</td>
+				<td>2.00</td>
+				<td>+0.19%</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
+</body>
+</html> 

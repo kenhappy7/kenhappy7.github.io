@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table element</title>
+<style>
+/* table */
+table { width:100%; border:1px solid #ddd; }
+caption { padding:8px 0; font-weight:bold; text-align:left;}
+th, td { border:0; padding:8px; vertical-align:top;}
+th { color:#333;}
+td { color: blue;}
+thead th{ border-bottom:1px solid #ccc; background:#f8f8f8;}
+tbody th{ border-bottom:1px solid #ddd; background:#fafafa;}
+tfoot th{ border-bottom:1px solid #ddd;}
+tbody td{ border-bottom:1px solid #ddd;}
+tfoot td{ border-bottom:1px solid #ddd; font-weight:bold; color:#333;}
+</style>
+</head>
+<body>
+
+<div class="table">
+	<table>
+		<caption><span>정아람의 고등학교 전 학년 성적표</span></caption>
+		<thead>
+			<tr>
+				<th colspan="2" scope="row">학년</th>
+				<th colspan="2" scope="colgroup">1학년</th>
+				<th colspan="2" scope="colgroup">2학년</th>
+				<th colspan="2" scope="colgroup">3학년</th>
+			</tr>
+			<tr>
+				<th colspan="2" scope="colgroup">교과목</th>
+				<th scope="col">1학기</th>
+				<th scope="col">2학기</th>
+				<th scope="col">1학기</th>
+				<th scope="col">2학기</th>
+				<th scope="col">1학기</th>
+				<th scope="col">2학기</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th colspan="2" scope="row">평균</th>
+				<td>79.09</td>
+				<td>80</td>
+				<td>79.09</td>
+				<td>80</td>
+				<td>79.09</td>
+				<td>80</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<th rowspan="3" scope="rowgroup">기초</th>
+				<th scope="row">국어</th>
+				<td>100</td>
+				<td>90</td>
+				<td>100</td>
+				<td>90</td>
+				<td>100</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<th scope="row">영어</th>
+				<td>80</td>
+				<td>90</td>
+				<td>80</td>
+				<td>90</td>
+				<td>80</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<th scope="row">수학</th>
+				<td>70</td>
+				<td>80</td>
+				<td>70</td>
+				<td>80</td>
+				<td>70</td>
+				<td>80</td>
+			</tr>
+			<tr>
+				<th rowspan="3" scope="rowgroup">탐구</th>
+				<th scope="row">역사</th>
+				<td>90</td>
+				<td>100</td>
+				<td>90</td>
+				<td>100</td>
+				<td>90</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<th scope="row">도덕</th>
+				<td>100</td>
+				<td>90</td>
+				<td>100</td>
+				<td>90</td>
+				<td>100</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<th scope="row">과학</th>
+				<td>80</td>
+				<td>70</td>
+				<td>80</td>
+				<td>70</td>
+				<td>80</td>
+				<td>70</td>
+			</tr>
+			<tr>
+				<th rowspan="2" scope="rowgroup">예체능</th>
+				<th scope="row">음악</th>
+				<td>60</td>
+				<td>70</td>
+				<td>60</td>
+				<td>70</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+			<tr>
+				<th scope="row">미술</th>
+				<td>70</td>
+				<td>60</td>
+				<td>70</td>
+				<td>60</td>
+				<td>70</td>
+				<td>60</td>
+			</tr>
+			<tr>
+				<th rowspan="3" scope="rowgroup">선택</th>
+				<th scope="row">기술</th>
+				<td>90</td>
+				<td>100</td>
+				<td>90</td>
+				<td>100</td>
+				<td>90</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<th scope="row">제2외국어</th>
+				<td>70</td>
+				<td>60</td>
+				<td>70</td>
+				<td>60</td>
+				<td>70</td>
+				<td>60</td>
+			</tr>
+			<tr>
+				<th scope="row">한문</th>
+				<td>60</td>
+				<td>70</td>
+				<td>60</td>
+				<td>70</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+</body>
+</html>

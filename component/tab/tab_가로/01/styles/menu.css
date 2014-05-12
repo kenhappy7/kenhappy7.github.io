@@ -1,0 +1,12 @@
+﻿#multi_drop_menus * { margin: 0; padding: 0; }
+#multi_drop_menus { behavior: url(../../lib/js_tools/csshover.htc); font-family: lucida, arial, sans-serif; border: 1px solid #686; float: left; }
+#multi_drop_menus ul { float:left; }
+#multi_drop_menus li { border-left: 2px solid #aca; list-style-type: none; float: left; position: relative; background-color: #ded; }
+#multi_drop_menus li:fi rst-child { border-left: none; }
+#multi_drop_menus a { display: block; padding: .3em 6px; color: #686; text-decoration: none; }
+#multi_drop_menus a:hover { color: #ded; background-color: #464; }
+#multi_drop_menus li ul { position: absolute; display: none; width: 7em; left: -1px; } 
+#multi_drop_menus li:hover ul { display: block; }
+#multi_drop_menus li ul li { width: 100%; border-right: 1px solid #686; border-bottom: 1px solid #686; border-left: 1px solid #686; }
+#multi_drop_menus li ul li:fi rst-child { border-left: 1px solid #686; border-top: 1px solid #686; }
+* html #multi_drop_menus li ul { border-top: 1px solid #686; }

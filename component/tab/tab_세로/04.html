@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<style>
+.multi_drop_menus * { margin:0; padding:0;}
+.multi_drop_menus { font-family:Lucida, arial, sans-serif;  float:left; border:1px solid green; text-indent: 10px; }
+
+.multi_drop_menus  ul { width: 150px; }
+.multi_drop_menus li { width: 150px; position:relative; list-style:none; border-top: 1px solid #ccc; }
+.multi_drop_menus li:first-child { border-top:none;}
+.multi_drop_menus a { display:block; width: 150px; padding: 10px 0; color:#ccc; text-decoration:none;}
+.multi_drop_menus a:hover { width: 150px; color:#ccc; background:#000;}
+
+.multi_drop_menus li ul { position:absolute; left: 151px; top: 0; display:none; }    
+.multi_drop_menus li:hover ul { display:block;  }       
+
+.multi_drop_menus li ul li { width: 150px; background-color: #f9f9f9; border-top: 1px solid #ccc; }               
+.multi_drop_menus li ul li:first-child { border-top: none; }
+
+*html .multi_drop_menus  li ul { border-top:1px solid #ccc;}  /* IE6가 first-child를 이해 하지 못하므로 이해시키기 위한 책 */
+
+</style>
+	<!--
+		
+		
+		
+	-->
+</head>
+
+	<div class="multi_drop_menus">
+		<ul>
+			<li><a>리스트01</a>
+				<ul>
+					<li><a>서브리스트01</a></li>
+					<li><a>서브리스트02</a></li>
+					<li><a>서브리스트03</a></li>
+					<li><a>서브리스트04</a></li>
+			   </ul>
+		   </li>
+		   <li><a>리스트02</a>
+				<ul>
+					<li><a>서브리스트01</a></li>
+					<li><a>서브리스트02</a></li>
+					<li><a>서브리스트03</a></li>
+					<li><a>서브리스트04</a></li>
+			   </ul>
+		   </li>
+		   <li><a>리스트03</a>
+				<ul>
+					<li><a>서브리스트01</a></li>
+					<li><a>서브리스트02</a></li>
+					<li><a>서브리스트03</a></li>
+					<li><a>서브리스트04</a></li>
+			   </ul>
+		   </li>
+		</ul>
+	</div>
+
+
+	
+<body>
+	

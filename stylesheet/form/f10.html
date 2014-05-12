@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8">
+<style>
+* { font-size: 12px;}
+h2, form, fieldset, p { margin: 0; padding: 0;}
+img, fieldset { border: 0;}
+img { vertical-align: top;}
+label, input, select, textarea { vertical-align: middle;}
+
+
+.login { width: 305px; background: url("images/bg_login_1.gif") no-repeat 0 0;}
+.inner { background: url("images/bg_login_2.gif") no-repeat bottom left;}
+form { padding: 10px;}
+label { display: inline-block; width: 60px;}
+
+
+.box { padding: 0px 0 20px 10px;}
+a:link, a:visited { color: #555;}
+a:hover,
+a:focus { color: #000; text-decoration: underline;}
+
+input[type="text"] { line-height: 1.8;  } 
+input[type="password"] { line-height: 1.8; }
+input[type="button"] { }
+
+
+</style>
+</head>
+<body>
+
+	<h2>회원 로그인</h2>
+	<div class="login">
+		<div class="inner">
+			<form  action="" method="post" class="loginform" name="loginform">
+				<fieldset>
+				<legend><img src="images/login_ti.gif" alt=""/></legend>
+					<p>
+						<label for="LoginId">아이디</label>
+						<input type="text" id="LoginId" name="LoginId" maxlength="15"/>
+						<span>
+							<input type="checkbox" id="LoginCheck" name="LoginCheck"/>
+						    <label for="LoginCheck">아이디저장</label>
+						</span>
+					</p>
+					<p>
+						<label for="LoginPass">비밀번호</label>
+						<input type="password" id="LoginPass" name="LoginPass" maxlength="15" />
+						<input type="button"  value="로그인"  class="loginbtn" />
+					</p>
+				</fieldset>
+			</form>
+
+			<div class="box">
+				<a href="#">회원가입</a>
+				<a href="#"> 아이디 / 비밀번호 찾기</a>
+			</div>
+		</div>
+	</div>
+
+
+
+ </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>table element</title>
+<meta charset="utf-8">
+<style>
+table {  border-collapse: collapse;}
+
+
+colgroup[span="2"]{
+	background-color: yellow;
+}
+
+col.man { border-left: 2px solid red;}
+col.woman { border-right: 2px solid green;}
+
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+tfoot {
+	display: table-footer-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+tr {
+	display: table-row;
+}
+td { display: table-cell;}
+</style>
+</head>
+<body>
+
+
+<table>
+	<caption>일본의 남녀별 인구 추이</caption>
+	<colgroup span="1"></colgroup>
+	<colgroup span="2"></colgroup>
+	<colgroup span="1"></colgroup>
+	<thead>
+	<tr>
+		<th>년</th>
+		<th>남성</th>
+		<th>여성</th>
+		<th>합계</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th>2000년</th>
+		<td>62.11.222</td>
+		<td>33.44.55</td>
+		<td>22.33.33</td>
+	</tr>
+	<tr>
+		<th>2000년</th>
+		<td>62.11.222</td>
+		<td>33.44.55</td>
+		<td>22.33.33</td>
+	</tr>
+	</tbody>
+</table>
+<hr>
+
+
+
+<table>
+	<caption>일본의 남녀별 인구 추이</caption>
+	<colgroup span="1"></colgroup>
+	<colgroup>
+		<col class="man" />
+		<col class="woman" />
+	</colgroup>
+	<colgroup span="1"></colgroup>
+	<thead>
+	<tr>
+		<th>년</th>
+		<th>남성</th>
+		<th>여성</th>
+		<th>합계</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<th>2000년</th>
+		<td>62.11.222</td>
+		<td>33.44.55</td>
+		<td>22.33.33</td>
+	</tr>
+	<tr>
+		<th>2000년</th>
+		<td>62.11.222</td>
+		<td>33.44.55</td>
+		<td>22.33.33</td>
+	</tr>
+	</tbody>
+</table>	
+<hr>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
