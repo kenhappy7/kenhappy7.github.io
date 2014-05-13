@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>...</title>
+<meta charset="utf-8">
+<style>
+ul, li { margin: 0; padding: 0;}
+
+
+
+ul.nav { list-style: none; height:20px; display:inline; overflow:hidden; }
+.nav li { display:inline;}
+.nav a { float:left; width:90px; padding:3px 0 3px 20px; overflow:hidden; height:20px; border: 1px solid #000; line-height: 20px; background: url("images/bullets.png") no-repeat 0 3px;}
+
+.nav a:hover,
+.nav a:active, 
+
+.nav a.selected { background-position:0 -20px; }
+
+
+
+ul.stars { color:blue; list-style:square; padding-left: 20px; }
+ul.stars div { color: red;}
+
+
+ul.bullet { padding-left: 20px; list-style-image:url("images/bullet_grey.png");}
+ul.bullet li { ;}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<ul class="nav">
+  <li><a>list</a></li>
+  <li><a>list</a></li>
+  <li><a>list</a></li>
+  <li><a>list</a></li>
+</ul>
+<br><br><hr>
+
+
+
+<ul class="stars">
+  <li><div>list</div></li>
+  <li><div>list</div></li>
+  <li><div>list</div></li>
+  <li><div>list</div></li>
+</ul>
+<br><br><hr>
+
+
+
+<ul class="bullet">
+  <li>list</li>
+  <li>list</li>
+  <li>list</li>
+  <li>list</li>
+</ul>
+
+
+
+</body>
+</html>
