@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
 <head>
+<title>form</title>
 <meta charset="utf-8">
-<title></title>
 <style>
 body { font-size: 12px;}
 ul, li, dl, dt, dd, h2, tr, th, td, form, fieldset, p { margin: 0; padding: 0;}
@@ -31,6 +31,8 @@ dt { width: 100px;}
 </style>
 </head>
 <body>
+
+
 <form action=".html" method="post">
 	<fieldset>
 		<legend>login</legend>
@@ -43,7 +45,7 @@ dt { width: 100px;}
 			<span><input type="text" id="userPw"></span>
 		</p>
 		<p>
-			<button type="image" src="" alt="로그인">로그인
+		    <input type="image" src="images/login_submit.gif" alt="로그인">
 		</p>
 	</fieldset>
 
@@ -52,11 +54,11 @@ dt { width: 100px;}
 
 	<fieldset>
 		<legend>회원가입</legend>
-		<table summary="아이디, 이름, 비밀번호, 닉네임, 휴대전화, 전화번호, 이메일을 입력하는 표">
+		<table>
 		<caption><span>회원가입 입력 표</span></caption>
 		<colgroup>
-			<col width="100px">
-			<col width="*">
+			<col>
+			<col>
 		</colgroup>
 		<tbody>
 		<tr>
@@ -74,7 +76,7 @@ dt { width: 100px;}
 			<th><label for="txt3">비밀번호</label></th>
 			<td>
 				<input type="password" id="txt3">
-				<input type="image" src="" alt="비밀번호 변경">
+				<input type="image" src="images/login_submit.gif" alt="비밀번호 변경">
 			</td>
 		</tr>
 		<tr>
@@ -134,7 +136,7 @@ dt { width: 100px;}
 	<ul>
 		<li><label for="log1">아이디</label><input type="text" id="log1"></li>
 		<li><label for="log2">비밀번호</label><input type="password" id="log2"></li>
-		<li><input type="image" src="" alt="Login">로그인</li>
+		<li><input type="image" src="images/login_submit.gif" alt="로그인"></li>
 	</ul>
 	<br /><br />
 	<dl>
@@ -143,7 +145,7 @@ dt { width: 100px;}
 		<dt><label for="log4">비밀번호</label></dt>
 		<dd><input type="pasword" id="log4"></dd>
 	</dl>
-	<p><input type="image" src="" alt="Login">로그인</p>
+	<p><input type="image" src="images/login_submit.gif" alt="로그인"></p>
 </fieldset>
 
 
@@ -211,11 +213,9 @@ dt { width: 100px;}
 <!--
 연결된 id/title2개 쓸수있게 수정하기
 -->
-
-
-
-
-
 </form>
+
+
+
 </body>
 </html>
