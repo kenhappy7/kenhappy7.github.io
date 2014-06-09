@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* base */
+
+body{
+  line-height:1;
+}
+
+.hide { position: absolute; left: -9999%;}
+
+
+
+/* 레이아웃 */
+.header { width: 100%; margin-top: -50px; }
+.container { width: 100%;}
+.footer { width: 100%;}
+
+
+/* header영역 */
+.header_inner { overflow: hidden; position: relative; width: 950px; margin: 0 auto; padding-top: 5px; padding-bottom: 15px; border-bottom: 1px solid #999;}
+.container_inner { width: 950px; margin: 0 auto;}
+.footer_inner { width: 950px; margin: 0 auto;}
+
+
+
+.logo { position: relative; top: 79px; display: block; width: 118px; height: 56px;}
+.logo h1 { position: absolute; left: -9999%;}
+.header dl { margin-left: 10px;}
+.header dl, .link1 { float: right; }
+
+.header dd { display: none;}
+
+.header .link1 li { display: inline-block; padding-top: 5px; }
+.header .link1 li a { padding-left: 10px;}
+.header .link1 li:before {  content: "|"; color: #ccc;}
+.header .link1 .first:before { content: none;}
+
+
+.mainNavi { clear: both; float: right; width: 820px; margin-top: 30px;}
+
+.mainNavi li { float: left; width: 19%; height: 3em; line-height: 3em; text-align: right; }
+
+.mainNavi li a { color: #999; font-size: 14px; text-align: right; text-decoration: none; font-weight: bold;}
+
+.mainNavi li li a { display: none; }
+
+
+/* 본문 영역 */
+article { padding: 20px 0 0 0;}
+
+
+.container { clear: both;}
+.container_inner article { height: 10em;}
+
+.section { width: 100%; }
+.section h2,
+.section > p  { width: 20%; }
+
+
+.section h2 { margin-bottom: 10px; }
+.section p { font-size: 12px; line-height: 1.4em; color: #333; font-weight: bold; word-spacing: -1px; letter-spacing: -1px;}
+.section .img,
+.section ul { border-top: 5px solid #999; width: 710px; height: 279px; position: relative; top: -145px;right: -240px; padding-top: 35px;}
+
+
+.section1 h2,
+.section2 h2 { margin-top: 20px;}
+.section3 ul:after,
+.section4 ul:after,
+.section5 ul:after { content:""; display: block; clear: both;}
+
+.section3 ul li,
+.section4 ul li,
+.section5 ul li { float: left; width: 33.3%; text-align: center;}
+
+
+.section2 { margin-top: -100px;}
+.section3 { margin-top: -90px;}
+.section4 { margin-top: -140px;}
+.section5 { margin-top: -140px;}
+
+.section3 h2 img,
+.section4 h2 img,
+.section5 h2 img  { position: relative; top: -20px;}
+
+.section3 p,
+.section4 p,
+.section5 p  { position: relative; top: -20px;}
+
+
+.article { position: relative; top: -180px;}
+
+.article h2,
+.article p { width: 20%; }
+
+
+.article h2 { padding-bottom: 10px;}
+.article ul { padding-top: 30px; border-top: 5px solid #999; width: 710px; height: 279px; position: relative; top: -110px;right: -250px;}
+.article ul li { float: left; width: 220px; text-align: left; margin-left: 25px;}
+.article ul .first { margin-left: 0;}
+.article li img { width: 220px; height: 80px;  margin-bottom: 20px; }
+.article li p { width: 220px; }
+
+.aside { margin-top: -370px; border-top: 2px dotted #999; padding-top: 30px; padding-bottom: 30px;}
+.aside ul:after { content: ""; display: block; clear: both;}
+.aside ul li { float: left; width: 25%; }
+.aside .last { text-align: center;}
+
+.menubar li { display: inline-block; }
+.menubar li li { }
+
+.menubar { position: relative; border-top: 2px solid #999; margin-bottom: 20px; padding-top: 20px;}
+.menubar .more { position: absolute; top: 20px; right:0;}
+
+.menubar .last a { color: #ff0000; font-weight: bold;}
+
+
+.menubar .last:before { content: "|"; color: #999; padding-right: 5px; padding-left: 5px; }
+
+.menubar li ul { display: inline-block;}
+
+.menubar li.last ul a { color: #999;}
+
+
+
+
+/* 푸터 영역 */
+.mark { position: relative; border-top: 5px solid #999; padding-top: 20px; margin-bottom: 20px;}
+.mark:after { content: ""; display: block; clear: both;}
+.mark li {  float: left; margin-right: 20px;}
+.mark .last { position: absolute; right: 0;}
+
+
+.sitemap { float: left; font-size: 11px; vertical-align: bottom;}
+.sitemap li { float: left;  }
+
+.sitemap li:before {  content: "|"; color: #999; padding-right: 5px; padding-left: 5px; }
+.sitemap .first:before { content: none;}
+
+
+
+
+.footer dl { float: right;}
+.footer dd { display: none;}
+.footer p { clear: both; width: 50%; font-size: 10px; line-height: 1.8em; }
