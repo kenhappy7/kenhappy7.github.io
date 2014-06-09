@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <title>
+    	로그인
+    </title>
+    <script
+      charset="utf-8"
+      src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'
+      type='text/javascript'>
+    </script>
+    <script src='jquery.placeholder.js' type='text/javascript'></script>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+
+  </head>
+  <body>
+    <!--START:form -->
+    <form id="create_account" action="/signup" method="post">
+      <fieldset id="signup">
+        <legend>새 계정을 만듭니다</legend>
+        <ol>
+          <li>
+            <label for="first_name">이름</label>
+            <input id="first_name" type="text"
+                   autofocus="true"
+                   name="first_name" placeholder="한선용">
+          </li>
+          <li>
+            <label for="email">이메일 주소</label>
+            <!--START:placeholder_example -->
+            <input id="email" type="email"
+                   name="email" placeholder="user@example.com">
+            <!--END:placeholder_example -->
+          </li>
+          <li>
+            <label for="password">비밀번호</label>
+            <input id="password" type="password" name="password" value=""
+                   autocomplete="off" placeholder="8-10 글자" />
+          </li>
+          <li>
+            <label for="password_confirmation">비밀번호 확인</label>
+            <input id="password_confirmation" type="password"
+                   name="password_confirmation" value=""
+                   autocomplete="off" placeholder="비밀번호를 다시 입력하세요" />
+          </li>
+          <li><input type="submit" value="회원가입"></li>
+        </ol>
+      </fieldset>
+    </form>
+    <!--END:form -->
+
+     <script language='javascript'>
+      //START:placeholder_fallback
+      $(function(){
+        //START:placeholdersupport
+        function hasPlaceholderSupport() {
+          var i = document.createElement('input');
+          return 'placeholder' in i;
+        }
+        //END:placeholdersupport
+
+        if(!hasPlaceholderSupport()){
+          $("#create_account").placeholder();
+          //END placeholder_fallback
+
+          $('input[autofocus=true]').focus();
+
+          //START:placeholder_fallback
+        };
+      });
+      //END:placeholder_fallback
+    </script>
+  </body>
+</html>

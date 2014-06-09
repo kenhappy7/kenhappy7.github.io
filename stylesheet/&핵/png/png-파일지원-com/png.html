@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   lang="ko"  xml:lang="ko">
+ <head>
+  <meta http-equiv="Content-Type"  content="text/html;charset=utf-8" />
+  <title> new document </title>
+   <style  type="text/css"> 
+		h2{  background-color:yellow;  color:#333;  }
+		body{  background-color:black;  color:white;  font-weight:bold;}
+		.msAlpha {
+		     background:none;
+		     width:100px; height:100px;
+			filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(    src="icon_coffee.png", sizingMethod="crop");
+		}
+		#header{    width:320px;  height:200px;  background:url("icon_coffee.png");}
+		#contents{  width:320px;  height:200px;  background:url("icon_coffee.png");}
+   </style>
+<!--[if IE 6]>
+   <script type="text/javascript"  src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+   <script type="text/javascript">
+	   DD_belatedPNG.fix(".test1");
+   </script>
+<![endif]-->
+ </head>
+ <body>
+   <h2> PNG FILE 투명도 지원 : 고전적 방법</h2>
+   <p  class="msAlpha"></p>
+   
+   <h2> PNG FILE 투명도 지원 : 이미지에 이용하는 방법 </h2>
+   <p> 
+	   <span> 투명도 처리 X </span>
+	   <img src="icon_coffee.png"  alt="이미지에 투명도 지원" />
+   </p>
+   <p> 
+	   <span> 투명도 처리 O </span>
+	   <img src="icon_coffee.png"  alt="이미지에 투명도 지원"  class="test1" />
+   </p>
+   <h2> PNG FILE 투명도 지원 :  배경 이용하는 방법 </h2>
+   <div id="header">   배경 : 투명도처리 X </div>
+   <div id="contents"  class="test1"> 배경 : 투명도처리 O </div>
+ </body>
+</html>
+<!--
+   투명도 지원 찾아보기
+   1)  고전적방법  : filter: progid:DXImageTransform.Microsoft.AlphaImageLoader
+   2)   js 이용방법 : http://dillerdesign.com/experiment/DD_belatedPNG/
+		 ① html에 파일에 투명도를 지원하고 싶은 곳에 class이름 주기
+			   class="클래스이름"
+		 ② js 스크립트 파일 삽입하기
+		 ③ 조건주석문으로 IE 6버젼일때만 지원하게 만들기
+				DD_belatedPNG.fix("클래스이름")
+
+
+	gif   :  투명도 처리 O |   색상지원이 256 
+	png :  투명도 처리 O |   색상 지원이 더 다양함 (화질은 좋으나 용량이 무거움)
+    jpg  :  투명도 처리 X  |   화질도 좋고 용량도 적다 
+   bmp :         원본파일  |   화질도 좋고 용량 큼
+-->

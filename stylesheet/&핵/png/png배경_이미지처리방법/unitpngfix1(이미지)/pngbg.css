@@ -1,0 +1,3 @@
+* html .png24 {
+  tmp:expression(setPng24(this));
+}

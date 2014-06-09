@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <h1>output  요소 실습</h1>
+        <p>*----------------------------------*</p>
+   </head>
+   <body>
+      <fieldset>
+	     <legend>output 요소 지정 </legend>
+           <form onsubmit="return false">
+                 <input name="a" type="number" step="any"> +
+                 <input name="b" type="number" step="any"> =
+                 <output onforminput="value = a.valueAsNumber +
+                             b.valueAsNumber">답
+				 </output>
+           </form>
+        </fieldset>
+   </body>
+</html>

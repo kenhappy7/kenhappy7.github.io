@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>리스트 활용</title>
+<meta charset="utf-8">
+<style>
+body { font-size: small; font-family: "맑은 고딕";}
+ol, ul, li, p { margin: 0; padding: 0;}
+li { list-style: none;}
+a { color: #000; text-decoration: none;}
+a:hover { text-decoration: underline;}
+
+
+
+.section > ul { position:relative; width:609px; height:300px; background:url("images/bg/line2.gif") no-repeat 22px 52px;}
+li { position:absolute;}
+
+li.sys1 { left:161px; top:0;}
+li.sys2 { left:-161px; top:109px;}
+li.sys2_1 { left:-80px; top:109px;}
+li.sys3 { left:5px; top:109px;}
+li.sys4 { left:107px; top:110px;}
+li.sys5 { left:0; top:39px;} /* */
+li.sys6 { left:43px; top:39px;}
+li.sys7 { left:87px; top:39px;}
+li.sys8 { left:130px; top:39px;}
+</style>
+</head>
+<body>
+
+	
+<div class="section">
+	<ul>
+		<li class="sys1"><img src="images/txt/text2.gif" alt="사무처장">
+		<li class="sys2"><img src="images/txt/text3.gif" alt=""></li>
+		<li class="sys2_1"><img src="images/txt/text3.gif" alt=""></li>
+		<li class="sys3"><img src="images/txt/text4.gif" alt=""></li>
+		<li class="sys4"><img src="images/txt/text5.gif" alt="">
+			<ul>
+				<li class="sys5"><img src="images/txt/text6.gif" alt=""></li>
+				<li class="sys6"><img src="images/txt/text7.gif" alt=""></li>
+				<li class="sys7"><img src="images/txt/text8.gif" alt=""></li>
+				<li class="sys8"><img src="images/txt/text9.gif" alt=""></li>
+			</ul>
+		</li>
+	</ul>
+</div>	
+
+
+<!--
+li가 absolute되면 아래로 다 상속되서 값 -역으로 다시 잡기
+(기준점이 바뀐 곳 부모1개와
+아래li의 좌표 바뀐 기준점 1개 있음 
+-->
+
+
+</body>
+</html>

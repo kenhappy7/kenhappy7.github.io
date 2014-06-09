@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>웹폼</title>
+    </head>
+    <body>
+        <h2>예제 2.70 - 달력 기본</h2>
+        <input type="datetime" />
+        <h2>예제 2.71 - 주 단위 선택 달력</h2>
+        <input type="week" />
+        <h2>예제 2.72 - 월 단위 선택 달력</h2>
+        <input type="month" />
+        <h2>예제 2.73 - 시계만</h2>
+        <input type="time" />
+        <h2>예제 2.75 - 이메일만 받는 폼</h2>
+        <form>
+            이메일 : 
+            <input type="email" name="user_email" />
+            <input type="submit" value="확인" />
+        </form>
+        <h2>예제 2.77 - URL유효성 체크</h2>
+        <form>
+            블로그 주소 : 
+            <input type="url" name="user_url" />
+            <input type="submit" value="보내기" />
+        </form>
+        <h2>예제 2.81 - 검색 필드</h2>
+        <form>
+            <input type="search">
+            <input type="submit" value="검색">
+        </form>
+        <h2>예제 2.83 - 정해진 숫자만 입력받기</h2>
+        <input type="number" min="12" max="60" step="6" value="24" />
+        <h2>예제 2.87 - 범위내 값 선택</h2>
+        <input type="range" min="0" max="10" value="2" />
+        <h2>예제 2.89 - 전화번호 유효성 테스트</h2>
+        <form>
+            전화번호 : 
+            <input type="tel" pattern="[0-9]{11}" name="user_tel" title="하이픈(-)을 넣지마시고 11자리의 전화번호를 입력해주세요" />
+            <input type="submit" value="보내기" />
+            <p>하이픈(-)을 넣지말고 11자리의 전화 번호를 입력해주세요</p>
+        </form>
+        <h2>예제 2.90 - 여러개의 파일 업로드</h2>
+        <input type="file" multiple />
+        <h2>예제 2.92 - placeholder</h2>
+        <input type="email" placeholder="이메일 주소 입력" />
+        <h2>예제 2.93 - autocomplate</h2>
+        <input type="text" autocomplete="on" />
+        <h2>2.94 - autofocus</h2>
+        <input type="text" autofocus="autofocus" />
+        <h2>예제 2.96 - 데이터리스트</h2>
+        <label> 좋아하는 음식은? 
+        <input list="foods" />
+            <datalist id="foods">
+                <option value="한식">
+                <option value="양식">
+                <option value="일식">
+                <option value="중식">
+            </datalist>
+        </label>
+        <h2>예제 2.101 - 반드시 값을 입력해야 함</h2>
+        <form action="demo_form.asp" method="get">
+            찾이실 동이름을 입력해주세요 <input type="text" name="usr_name" required="required" />
+            <input type="submit" value="찾기" />
+        </form>
+        <h2>예제 2.103 - 필드셋을 사용 불능으로</h2>
+        <fieldset disabled>
+            <legend>검색하세요</legend>
+            <input type="search">
+            <input type="submit" value="검색">
+            <label><input type="checkbox"> 고급검색</label> 
+        </fieldset>
+        <h2>예제 2.104 - 중립상태의 체크박스</h2>
+        <input type="checkbox" id="chk"> 이건 체크된것도 아니고 안된것도 아니여
+        <script>
+            document.getElementById('chk').indeterminate = true;
+        </script>
+        <h2>예제 2.106 - 패턴 속성으로 우편번호 정규표현식 처리</h2>
+        <form>
+            <input type="text" pattern="\d{3}(-\d{3})?" title="올바른 우편번호 형식이 아닙니다." />
+            <input type="submit" value="우편번호 전송" />
+        </form>
+        <h2>예제 2.107 - 키전송</h2>
+        <form action="kg.jsp">
+            <keygen name="kgmoney" challenge>
+            <input type="submit" value="키전송" />
+        </form>
+        <h2>예제 2.108 - range, output 결합</h2>
+        <form>
+            <input type="range" required name="range" min="0" max="100" value="0" />
+            <output onforminput="value=range.value">0</output>
+        </form>
+    </body>
+</html>

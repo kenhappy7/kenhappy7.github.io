@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>form</title>
+<meta charset="utf-8">
+<style>
+body { font-size: 12px;}
+ul, li, dl, dt, dd, h2, tr, th, td, form, fieldset, p { margin: 0; padding: 0;}
+img, fieldset { border: 0;}
+img { vertical-align: top;}
+label, input, select, textarea { vertical-align: middle;}
+ul { list-style: none;}
+
+a:link, a:visited { color: #555;}
+a:hover,
+a:focus { color: #000; text-decoration: underline;}
+
+
+
+fieldset { padding: 20px; width: 500px; background-color: #f9f9f9; border: 1px solid gray; margin-bottom: 30px; }
+legend { color: brown;}
+label { display: inline-block; width: 100px; }
+table { border-collapse: collapse;}
+caption span { display: none;}
+th { text-align: left;}
+
+dl:after { content: ""; display: block; clear: both;}
+dt{ float: left; }
+dt { width: 100px;}
+
+</style>
+</head>
+<body>
+
+
+<form action=".html" method="post">
+	<fieldset>
+		<legend>login</legend>
+		<p>
+			<span><label for="userId">아이디</label></span>
+			<span><input type="text" id="userId"></span>
+		</p>
+		<p>
+			<span><label for="userPw">비밀번호</label></span>
+			<span><input type="text" id="userPw"></span>
+		</p>
+		<p>
+		    <input type="image" src="images/login_submit.gif" alt="로그인">
+		</p>
+	</fieldset>
+
+
+
+
+	<fieldset>
+		<legend>회원가입</legend>
+		<table>
+		<caption><span>회원가입 입력 표</span></caption>
+		<colgroup>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+		<tr>
+			<th><label for="txt1">아이디</label></th>
+			<td>
+				<input type="text" id="txt1">
+				<input type="button" value="중복확인">
+			</td>
+		</tr>
+		<tr>
+			<th><label for="txt2">이름</label></th>
+			<td><input type="text" id="txt2"></td>
+		</tr>
+		<tr>
+			<th><label for="txt3">비밀번호</label></th>
+			<td>
+				<input type="password" id="txt3">
+				<input type="image" src="images/login_submit.gif" alt="비밀번호 변경">
+			</td>
+		</tr>
+		<tr>
+			<th><label for="txt4">닉네임</label></th>
+			<td><input type="text" id="txt4"> <a href="#a">중복확인</a> 
+				<input type="checkbox" id="txt6"><label for="txt6">닉네임을 사용합니다.</label></td>
+		</tr>
+		<tr>
+			<th><label for="txt7">휴대전화</label></th>
+			<td>
+				<select id="txt7" title="통신사번호 선택">
+				<option>010</option>
+				<option>011</option>
+				<option>017</option>
+				</select>
+				-
+				<input type="text" title="휴대전화 중간자리">
+				-
+				<input type="text" title="휴대전화 마지막자리">
+			</td>
+		</tr>
+		<tr>
+			<th><label for="txt8">전화번호</label></th>
+			<td>
+				<select id="txt8" title="전화번호 선택">
+				<option>02</option>
+				<option>031</option>
+				<option>043</option>
+				</select>
+				-
+				<input type="text" value="5338" title="전화번호 중간자리">
+				-
+				<input type="text" value="2658" title="전화번호 마지막자리">
+			</td>
+		</tr>
+		<tr>
+			<th><label for="txt9">이메일</label></th>
+			<td><input type="text" id="txt9">@ 
+				<select title="입력방식 및 이메일 도메인 선택">
+				<option>직접입력</option>
+				<option>naver.com</option>
+				<option>nate.com</option>
+				<option>gmail.com</option>
+				</select>
+				<input type="text" title="이메일 도메인 입력">
+			</td>
+		</tr>
+	</tbody>
+	</table>
+</fieldset>
+
+
+
+
+<fieldset>
+	<legend><img src="" alt="MEMBER Login"></legend>
+	<ul>
+		<li><label for="log1">아이디</label><input type="text" id="log1"></li>
+		<li><label for="log2">비밀번호</label><input type="password" id="log2"></li>
+		<li><input type="image" src="images/login_submit.gif" alt="로그인"></li>
+	</ul>
+	<br /><br />
+	<dl>
+		<dt><label for="log3">아이디</label></dt>
+		<dd><input type="text" id="log3"></dd>
+		<dt><label for="log4">비밀번호</label></dt>
+		<dd><input type="pasword" id="log4"></dd>
+	</dl>
+	<p><input type="image" src="images/login_submit.gif" alt="로그인"></p>
+</fieldset>
+
+
+
+
+<fieldset>
+	<legend>회원가입</legend>
+	<dl>
+		<dt><label for="id">아이디</label></dt>
+		<dd><input type="text" id="id"><a href="#"><input type="image" alt="중복확인">중복확인</dd>
+		<!-- 
+		<button value="중복확인">중복확인</button>
+		<input type="button" value="중복확인"> 
+		-->
+		<dt><label for="name">이름</label></dt>
+		<dd><input type="text" id="name"></dd>
+
+		<dt><label for="password">비밀번호</dt>
+		<dd><input type="text" id="password"><button>비밀번호변경</button></dd>
+
+		<dt><label for="sname">닉네임</label></dt>
+		<dd>
+			<input type="text" id="sname"><button>중복확인</button>
+			<input type="checkbox" id="a1"><label for="a1">닉네임을 사용합니다</label></dd>
+		<dt><label for="mobile">휴대전화</label></dt>
+		<dd>
+			<select id="mobile" title="통신사번호 선택">
+				<option select="selected">010</option>
+				<option>011</option>
+			</select>
+			<input type="text" value="7721" title="전화번호 앞자리">
+			<input type="text" value="5337" title="전화번호 뒷자리">
+		</dd>
+
+		<dt><label for="tel">전화번호</label></dt>
+		<dd>
+			<select id="tel" title="전화번호선택">
+			<optgroup value="충정도">
+				<option select="selected">042</option>
+			</optgroup>	
+			</select>
+			<input type="text" value="522" title="서울">
+			<input type="text" value="1907" title="제주도">
+		</dd>
+
+		<dt><label for="email">이메일</label><dt>
+		<dd>
+			<input type="text" id="email">&#64;
+			<select title="입력방식선택">
+				<option size="30px" select="selected">직접입력</option>
+				<option>naver</option>
+			</select>
+			<input type="text" title="이메일 도메일 입력">
+		</dd>
+		<dt><label for="attchPhoto">파일</label></dt>
+		<dd>
+			<input type="file" name="attchPhoto" id="attchPhoto" />
+		</dd>
+	</dl>
+	<p>
+		<button type="submit">정보등록</button>
+		<!--<input type="image" src="" alt="전송" />-->
+	</p>
+</fieldset>
+<!--
+연결된 id/title2개 쓸수있게 수정하기
+-->
+</form>
+
+
+
+</body>
+</html>

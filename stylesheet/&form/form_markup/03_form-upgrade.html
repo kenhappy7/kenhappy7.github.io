@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>required 속성</title>
+</head>
+<body>
+<p><strong>*</strong>표시는 필수입력 항목입니다.</p>
+<form>
+<!---
+:::::::::::::::::::::::::	01_required="required"   
+		입력필드에 값이 채워졌는지에 대한 부분과 유효성을 판단해 주는 속성
+-->
+<fieldset>
+  <legend>필드 유효성 검사 : required="required"</legend>
+  <ul>
+    <li><label for="name"><strong>*</strong>NAME</label><input type="" id="name"  /></li>     
+    <li><label for="id"><strong>*</strong>ID</label><input type="" id="id" /></li>     
+    <li><label for="pw"><strong>*</strong>PASSWORD</label><input type="" id="pw" /></li>     
+    <li><label for="phone"><strong>*</strong>TEL</label><input type="" id="phone"/></li>    
+    <li><label for="email">E-MAIL</label><input type="" id="email" /></li>
+  </ul>
+  <p><input type="submit" value="SUBMIT" /></p>
+</fieldset> 
+<!---
+:::::::::::::::::::::::::	02_placeholder="0101234567"
+	필드에 입력형식 힌트주기
+-->
+<fieldset>
+  <legend>필드에 입력형식 힌트주기 : placeholder="0101234567"</legend>
+  <ul>    
+    <li><label for="phone">PHONE</label><input type="" id="phone" /></li> 
+    <li><label for="email">E-MAIL</label><input type="" id="email" /></li>
+  </ul>
+</fieldset> 
+<!---
+:::::::::::::::::::::::::	03_ autocomplete="on" 
+	자동완성 기능
+-->
+<fieldset>
+  <legend>자동완성 기능 :autocomplete="on"</legend>
+  <ul>    
+    <li><label for="phone">PHONE</label><input type="" id="phone" /></li>
+    <li><label for="email">E-MAIL</label><input type="" id="email" /></li>
+  </ul>
+</fieldset>
+<!---
+:::::::::::::::::::::::::	04_ datalist="on" 
+-->
+<fieldset>
+  <legend>datalist</legend>
+  <p>
+    <label for="course">SUBJECTS : </label><input type="text" id="course"/>
+    <datalist id="subjects">
+      <option value="html5">
+      <option value="css3">
+      <option value="javascript">
+    </datalist>
+  </p>
+</fieldset> 
+<!---
+:::::::::::::::::::::::::	05_ autofocus="autofocus" 포커스 자동이동
+-->
+<fieldset>
+  <legend>포커스 자동이동 : autofocus="autofocus" </legend>
+  <ul>    
+    <li><label for="name">NAME</label><input type="" id="name"/></li>     
+    <li><label for="id">ID</label><input type="" id="id" /></li>     
+    <li><label for="pw">PASSWORD</label><input type="" id="pw" /></li>       
+  </ul>
+  <p><input type="submit" value="전송" /></p>
+</fieldset>
+<!---
+:::::::::::::::::::::::::	06_ disabled  |  readonly
+		disabled 
+			 input 요소의 내용을 수정하거나 선택할 수 없도록 비활성화 상태로 만듬
+		readonly
+			 input 요소의 값이 변경되지 않은 채 폼 전송이 되어야하는 곳에 사용됨
+-->
+<fieldset>
+  <legend>disabled  |  readonly </legend>
+  <ul>
+    <li><label for="serialNum">SERIALNUMBER : </label><input type="text" id="serialNum" /><input type="button" value="이전" /><input type="button" value="다음" /></li>
+    <li><label for="company">COMPANY : </label><input type="text" id="company" value="APPLE"  /> </li>
+  </ul>
+</fieldset>
+<!---
+:::::::::::::::::::::::::	07_ pattern  |  multiple
+	* pattern :  정규식표현방법
+			pattern="\d{3}-\d{3,4}-\d{4}"
+						숫자3자기 - 숫자3~4자기 - 숫자4자리
+	* multiple : 
+			여러개의 이메일을 , 로 입력하거나 다중의 파일을 선택할 수 있도록 해주는 속성
+			<label for="email">  이메일 : </label> <input type="email"  id="email"  multiple="multiple" />
+			<label for="file">  파일찾기 : </label> <input type="file"  id="file"  multiple="multiple" />
+
+-->
+<fieldset>
+  <legend>pattern 속성</legend>  
+    <p><label for="tel"> PHONE : </label><input type="tel" id="email"   pattern="\d{3}-\d{3,4}-\d{4}"/></p> 
+    <p><input type="submit" value="전송" /></p>
+</fieldset> 
+</form>
+</body>
+</html>

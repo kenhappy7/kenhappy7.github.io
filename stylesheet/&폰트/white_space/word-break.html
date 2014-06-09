@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>word-break</title>
+		<style type="text/css">
+			p {
+				border:3px solid #f00;
+				width:200px;
+				padding:10px;
+			}
+			.normal {
+				word-break: normal;
+			}
+			.keep-all {
+				word-break: keep-all;
+			}
+			.break-all {
+				word-break: break-all;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>word-break 속성</h1>
+		<p class="normal">
+			이 단락에는 word-break 속성값이 normal로 적용되었습니다.
+		</p>
+		<p class="keep-all">
+			이 단락에는 word-break 속성값이 keep-all로 적용되었습니다.
+		</p>
+		<p class="break-all">
+			이 단락에는 word-break 속성값이 break-all로 적용되었습니다.
+		</p>
+	</body>
+</html>
