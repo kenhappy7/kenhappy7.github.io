@@ -45,17 +45,25 @@ a:active { color:#f00; text-decoration:none;}
 
 
 .header nav { margin-top: 50px;}
-.mainNavi { clear: both; margin: 0 0 0 140px; width: 800px; height: 40px;  }
-.mainNavi li { float: left; width: 20%; height: 40px; text-align: right;}
+.mainNavi { clear: both; margin: 0 0 0 170px; width: 830px; height: 40px;  }
+.mainNavi li { float: left; width: 20%; height: 40px; text-align: center;}
 .mainNavi li:hover > a { color: #ff0000; font-weight: bold;}
 .mainNavi a { display: block; height: 40px; line-height: 40px; font-weight: bold; color: #000; text-decoration: none; }
 
 
-.mainNavi li ul { position: absolute; left: -10000px;}
-.mainNavi li:hover ul { background: #000; display: block; left:0; width: 100%; padding-left: 180px; }
+.mainNavi li > ul { position: absolute; left: -10000px;}
+.mainNavi li:hover > ul { background: #000; display: block; left: 0; width: 100%; padding-left: 200px; }
+.mainNavi li:hover > ul ul { background: #f9f9f9; }
+.mainNavi li:hover > ul ul li a { color: #000; font-weight: bold;}
 
-.mainNavi li li { height: auto; width: 10%; }
+
+.mainNavi li li { width: 10%; }
 .mainNavi li li a { color: #fff; font-weight: bold; }
+
+.mainNavi li li:hover { background: #ff0000;}
+.mainNavi li li:hover li { background: #f9f9f9; font-weight: bold;}
+.mainNavi li li:hover a { color: #fff; font-weight: bold;}
+.mainNavi li li:hover li:hover a { color: #ff0000;}
 
 
 
