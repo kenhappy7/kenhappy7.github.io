@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+.container_inner:after { content: ""; display: block; clear: both;}
+
+.sidebar { width: 20%; float: left; min-height: 800px;}
+.contents { width: 80%; float: right; min-height: 800px;}
+
+
+.aside2 { position: relative; text-indent: 10px;}
+.aside2 h2 { width: 170px; height: 45px; line-height: 45px; color: #fff; position: absolute; top: -50px; background: #ff0000; border-bottom: 5px solid #999;}
+.aside2 ul { width: 170px;}
+.aside2 ul li { height: 45px; line-height: 45px;  border-bottom: 1px solid #999;}
+.aside2 ul li a { font-size: 13px; color: #555; font-weight: bold; letter-spacing: -1px;}
+.aside2 ul li a:hover { color: #ff0000; text-decoration: none; }
+
+.etcLink .link { display: block; margin: 20px 0 20px 0;}
+.etcLink ul { width: 170px; }
+.etcLink ul li { width: 170px; height: 52px; }
+.etcLink ul li a { display: block; height: 52px;}
+
+
+
+.contents .locator { margin-bottom: 30px;}
+.contents .locator span { position: absolute; left: -99999%;}
+.locator li { display: inline-block; }
+.locator li:before {  content: ">"; color: #999;}
+.locator .first:before { content: none;}
+.locator li a { color: #555; line-height: 1.6; padding: 0 5px;} 
+.locator img { vertical-align: top;}
+
+
+
+
+.contents h3 { margin-bottom: 20px;}
+.contents p { font-size: 17px; margin-bottom: 30px;}
+.contents p strong { color: orange;}
+
+
+
+table { width: 100%; border-top: 2px solid #999;}
+table td { border-bottom: 1px dotted #999;}
+table th,
+table td { padding: 20px;} 
+
+table th { vertical-align: top; position: relative; top: -1px; font-size: 20px; width: 10%;}
+table .cr { font-weight: bold; font-size: 23px;color: orange;}
+table .part th { border-top: 1px dotted #999;}
