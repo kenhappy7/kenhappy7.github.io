@@ -34,7 +34,8 @@ a:active { color:#f00; text-decoration:none;}
 .logo { position: relative; top: 79px; display: block; width: 118px; height: 56px;}
 .logo h1 { position: absolute; left: -9999%;}
 .header dl { margin-left: 10px;}
-.header dl, .link1 { float: right; }
+.header dl  { float: right; }
+.link1 { float: right; }
 .header dd { display: none;}
 
 
@@ -53,7 +54,7 @@ a:active { color:#f00; text-decoration:none;}
 
 .mainNavi li > ul { position: absolute; left: -10000px;}
 .mainNavi li:hover > ul { background: #000; display: block; left: 0; width: 100%; padding-left: 200px; }
-.mainNavi li:hover > ul ul { background: #f9f9f9; }
+.mainNavi li:hover > ul ul { background: #fff; border-bottom: 2px solid #ddd;}
 .mainNavi li:hover > ul ul li a { color: #000; font-weight: bold;}
 
 
@@ -61,7 +62,7 @@ a:active { color:#f00; text-decoration:none;}
 .mainNavi li li a { color: #fff; font-weight: bold; }
 
 .mainNavi li li:hover { background: #ff0000;}
-.mainNavi li li:hover li { background: #f9f9f9; font-weight: bold;}
+.mainNavi li li:hover li { background: #fff; font-weight: bold; }
 .mainNavi li li:hover a { color: #fff; font-weight: bold;}
 .mainNavi li li:hover li:hover a { color: #ff0000;}
 
@@ -122,7 +123,7 @@ a:active { color:#f00; text-decoration:none;}
 
 .menubar .last:before { content: "|"; color: #999; padding-right: 5px; padding-left: 5px; }
 .menubar li ul { padding-left: 20px; display: inline-block;}
-.menubar li.last ul a { color: #999;}
+.menubar li.last ul a { letter-spacing: -1px; color: #999;}
 
 
 
@@ -133,20 +134,16 @@ a:active { color:#f00; text-decoration:none;}
 .mark li {  float: left; margin-right: 20px;}
 .mark .last { position: absolute; right: -20px;}
 
-
 .sitemap { float: left; vertical-align: bottom;}
 .sitemap li { float: left;  }
-
 .sitemap li a { color: #999;}
 .sitemap li:before {  content: "|"; color: #999; padding-right: 5px; padding-left: 5px; }
 .sitemap .first:before { content: none;}
 
-
-
-
 .footer dl { float: right;}
 .footer dd { display: none;}
-.footer p { clear: both; width: 50%; line-height: 1.8em; }
+.footer p { clear: both; width: 60%; line-height: 1.8em; font-size: 11px;}
+
 
 
 
