@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+
+
+form { text-align: center;}
+form legend { position: absolute; left: -9999%;}
+form p { display: inline-block;}
+form select { width: 120px; height: 30px;}
+form input[type="submit"] { width: 100px; height: 30px;}
+form input[type="text"] { border: 1px solid #999; width: 300px; height: 28px;}
+

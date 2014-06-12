@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+table { width: 100%; border-top: 2px solid #999;}
+table td { border-bottom: 1px dotted #999;}
+table th,
+table td { padding: 20px; vertical-align: middle;} 
+
+table th { vertical-align: top; position: relative; top: -1px; font-size: 20px; width: 10%;}
+table .cr { font-weight: bold; font-size: 23px;color: orange;}
+table .part th { border-top: 1px dotted #999;}
+
+table td { font-size: 13px; }
+
+
