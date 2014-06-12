@@ -3,7 +3,7 @@
 
 /* base */
 html { font-size: 100%; background: #fff;}
-body, input, textarea, select, button, table { color:#000; font-size:75%; line-height:1.2; font-family:"돋음" , "굴림" , "Gulim","Dotum", AppleGothic, verdana, sans-serif;  }
+body, input, textarea, select, button, table { color:#000; font-size:75%; line-height:1.6; font-family:"돋음" , "굴림" , "Gulim","Dotum", AppleGothic, verdana, sans-serif;  }
 
 
 a , a:link{ color:#4f4f4f; text-decoration:none; }   
@@ -39,7 +39,7 @@ a:active { color:#f00; text-decoration:none;}
 
 
 .header .link1 li { display: inline-block; padding-top: 2px; }
-.header .link1 li a { padding-left: 10px; color: #999;}
+.header .link1 li a { padding-left: 10px; }
 .header .link1 li:before {  content: "|"; color: #ccc;}
 .header .link1 .first:before { content: none;}
 
@@ -80,7 +80,7 @@ a:active { color:#f00; text-decoration:none;}
 
 .section h2 { width: 20%; float: left; margin-right: 50px;}
 .section .img { width: 80%; }
-.section .first { position: absolute; top: 90px; left: 0; width: 20%; line-height: 1.6;}
+.section .first { position: absolute; top: 90px; left: 0; width: 20%; }
 .section .img,
 .section ul { border-top: 5px solid #999; width: 710px; float: left;}
 .section:after { content: ""; display: block; clear: both;}
@@ -94,14 +94,25 @@ a:active { color:#f00; text-decoration:none;}
 .article .first { width: 20%; }
 
 
-.article .first { position: absolute; top: 120px; left: 0; line-height: 1.6;}
+.article .first { position: absolute; top: 120px; left: 0;}
 .article h2 { float: left; margin-right: 40px;}
 .article ul {  margin-bottom: 70px; width: 710px; float: left; border-top: 5px solid #999; padding-top: 30px;}
 .article ul li { width: 200px; height: 100px; float: left; margin-right: 55px; }
 
+
+.section_fig { border-top: 5px solid #999; width: 710px; float: left; }
+.article figure, 
+.article figcaption { margin: 0; padding: 0; }
+.article figure { width: 200px; float: left; margin-right: 55px; margin-top: 30px; }
+
+.article figure img { width: 200px; height: 100px; }
+.article figcaption { width: 100%; margin-top: 20px;}
+.article .last { margin-right: 0;}
+
+
 .article ul .right { margin-right:-30px; }
 .article p { margin-bottom: 10px;}
-.article ul li a { color: #999; line-height: 1.2;}
+.article ul li a { line-height: 1.2;}
 .article li img { width: 200px; height: 100px;}
 
 
@@ -114,15 +125,15 @@ a:active { color:#f00; text-decoration:none;}
 .aside .center { text-align: center;}
 .aside .center1 { text-align: right;}
 .menubar li { display: inline-block; }
-.menubar li a { color: #999;}
+.menubar li a { }
 
 .menubar { position: relative; border-top: 2px solid #999; margin-bottom: 20px; padding-top: 20px;}
 .menubar .more { position: absolute; top: 20px; right:0;}
 .menubar .last a { color: #ff0000; font-weight: bold;}
 
-.menubar .last:before { content: "|"; color: #999; padding-right: 5px; padding-left: 5px; }
+.menubar .last:before { content: "|"; padding-right: 5px; padding-left: 5px; }
 .menubar li ul { padding-left: 20px; display: inline-block;}
-.menubar li.last ul a { letter-spacing: -1px; color: #999;}
+.menubar li.last ul a { letter-spacing: -1px; }
 
 
 
@@ -135,8 +146,8 @@ a:active { color:#f00; text-decoration:none;}
 
 .sitemap { float: left; vertical-align: bottom;}
 .sitemap li { float: left;  }
-.sitemap li a { color: #999;}
-.sitemap li:before {  content: "|"; color: #999; padding-right: 5px; padding-left: 5px; }
+.sitemap li a { }
+.sitemap li:before {  content: "|"; padding-right: 5px; padding-left: 5px; }
 .sitemap .first:before { content: none;}
 
 .footer dl { float: right;}
