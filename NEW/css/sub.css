@@ -35,15 +35,12 @@
 .locator strong { color: #000; font-weight: bold;}
 
 
+
+/* sub1 */
 .contents h3 { margin-bottom: 20px;}
 .contents p { color: #999; font-size: 17px; margin-bottom: 30px;}
 .contents p strong { color: orange;}
-
-
 .contents2 .small { font-size: 13px;}
-
-
-
 
 .btn1 { padding: 10px 20px; background: #f9f9f9; border-radius: 5px; border: 1px solid #ddd;}
 
@@ -61,6 +58,8 @@ video { position: relative; top: -40px; left: -18px;}
 li.first strong { font-weight: bold; color: #000; font-size: 16px; letter-spacing: -1px;}
 
 
+
+/* sub2 */
 .videolist { width: 300px; float: right; }
 .videolist ul li { border: 1px solid #ddd; background: #eaeaea; height: 72px; margin-bottom: 1px;}
 .videolist ul li:after { content: ""; display: block; clear: both;}
@@ -76,8 +75,7 @@ li.first strong { font-weight: bold; color: #000; font-size: 16px; letter-spacin
 
 
 
-
-
+/* sub3 */
 .section_press div { float: left; width: 30%; margin-right: 5%;}
 .section_press .presslist { margin-right: 0;}
 
@@ -105,8 +103,10 @@ li.first strong { font-weight: bold; color: #000; font-size: 16px; letter-spacin
 
 
 
-.contents4 h4 img:first-child { margin-top: -10px; margin-bottom: 20px;}
-.recruitprocess h4 { border-top: 1px solid #999; padding-top: 40px; margin-bottom: 20px;}
+
+/* sub4 */
+.contents4 h4 { margin-bottom: 30px; }
+.recruitprocess h4 { margin-bottom: 30px; border-top: 1px solid #999; padding-top: 40px;}
 .recruitprocess ol { margin-bottom: 20px; width: 100%; height: 140px; background: url("../images/img_sk_plant_new.png") no-repeat 0 0;}
 .recruitprocess ol li { text-indent: -9999%;}
 
@@ -114,20 +114,35 @@ li.first strong { font-weight: bold; color: #000; font-size: 16px; letter-spacin
 .recruitprocess p { color: #999; font-size: 13px; line-height: 1.6;}
 
 
-.sitelist { float: left; width: 30%; margin-right: 5%; margin-bottom: 40px;}
+
+.qna { line-height: 1.6; margin-bottom: 50px;}
+.qna dt { height: 50px; line-height: 50px; text-indent: 30px; border: 1px solid #ddd; background: url("../images/icon_q.gif") no-repeat 10px center;}
+.qna dt a { display: block; width: 100%; color: #555; background: url("../images/btn_plus.gif") no-repeat center right;}
+.qna dt a:hover { text-decoration: none;}
+.qna dd { padding: 20px 0 20px 20px; }
+
+
+
+
+/* sub5 */
+.sitelist { float: left; width: 30%; margin-right: 5%; margin-bottom: 40px; text-indent: 10px; }
 .sitelist:after { content:""; display: block; clear: both;}
 .sitelist h3 { margin-bottom: 0; line-height: 40px; height: 40px; border-bottom: 3px solid #ccc; border-top: 3px solid #ea002c; font-size: 18px; color: #ea002c; font-weight: bold;}
 
 
-
-.sitelist ul li ul { margin-top: 10px; width: 100%; margin-bottom: -15px;}
+.sitelist li ul { margin-top: 10px; width: 100%; margin-bottom: -15px;}
 .last { margin-right: 0;}
 
 
 .sitelist li { border-bottom: 1px solid #999; padding: 15px 0 15px 0;}
-.sitelist ul li a { font-size: 13px; color: #555; font-weight: bold; letter-spacing: -1px;}
-.sitelist ul li a:hover { color: #ff0000; text-decoration: none; }
-.sitelist li li { border: none;}
-.sitelist ul li li a:hover { color: orange;}
+.sitelist li a { font-weight: bold; font-size: 14px; color: #555; }
+.sitelist li a:hover { text-decoration: none; }
+.sitelist li li { border: none; padding: 10px 0 10px 0;}
+.sitelist li li a { font-weight: bold; color: #555; font-size: 12px; }
+.sitelist li li a:hover { color: #555;}
+
+
+
+
 
 
