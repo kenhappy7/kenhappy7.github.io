@@ -76,20 +76,18 @@ li.first strong { font-weight: bold; color: #000; font-size: 16px; letter-spacin
 
 
 /* sub3 */
-.section_press div { float: left; width: 30%; margin-right: 5%;}
-.section_press .presslist { margin-right: 0;}
+.section_fig2 { float: left; }
+.section_fig2 figure, 
+.section_fig2 figcaption { margin: 0; padding: 0; }
+.section_fig2 figure { width: 200px; float: left; margin-right: 55px;  }
 
-.section_press .presslist { padding: 0;}
-.section_press figure,
-.section_press figcaption { margin: 0; padding: 0;}
+.section_fig2 figure img { width: 200px; height: 100px; }
+.section_fig2 figcaption { width: 100%; font-size: 14px; padding-top: 10px;}
+.section_fig2 .last { margin-right: 0;}
+.section_press p { font-size: 12px; margin-top: 5px; margin-bottom: 10px; padding: 0;}
 
 
 
- 
-.section_press figure { width: 222px; height: 100px; text-align: center; margin-bottom: 20px;}
-.section_press figcaption { margin: 10px 0 5px 0; font-size: 13px; }
-.section_press figcaption a:hover { }
-.section_press p { font-size: 12px; }
 
 
 .searchtable td { font-size: 13px;}
