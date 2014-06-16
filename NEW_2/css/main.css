@@ -64,7 +64,7 @@
 
 .carousel4 > div { border-top: 1px solid #3b821f; padding: 10px 0;}
 .carousel4 > div:first-child { border-top: none;}
-.carousel4 ul li { text-indent: -9999%; display: inline-block; width:70px; height: 25px; margin-left: -4px;}
+.carousel4 ul li { display: inline-block; width:70px; height: 25px; margin-left: -4px;}
 .carousel4 ul li a { color: #fff;}
 
 .carousel4 ol { position: absolute; top: 10px; right: 55px;}
@@ -96,7 +96,7 @@
 
 /* sec4 */
 .sec4 .more { position: absolute; top: 20px; right: 15px;}
-.sec4 > div a {  text-indent: -9999%; margin-left: -4px; display: inline-block; width: 32px; height: 33px;}
+.sec4 > div a { margin-left: -4px; display: inline-block; width: 32px; height: 33px;}
 .sec4 > div { padding-left: 10px;}
 .sec4 > div a {  background: url("../images/sprite/bg_tab.gif") no-repeat; }
 .sec4 > div .a { background-position: 0 0;}
