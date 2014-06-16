@@ -1,21 +1,5 @@
 @charset "UTF-8";
 
-
-/* base */
-html { font-size: 100%; background: #fff;}
-body, input, textarea, select, button, table { color:#000; font-size:75%; line-height:1.6; font-family:"돋음" , "굴림" , "Gulim","Dotum", AppleGothic, verdana, sans-serif;  }
-
-
-a , a:link{ color:#4f4f4f; text-decoration:none; }   
-a:visited { color:#8a2e91; text-decoration:none; }   
-a:hover, a:focus { color:red; text-decoration:underline; }
-a:active { color:#f00; text-decoration:none;}
-
-.hide { position:absolute; left:-9999%; width:1px; height:1px; text-indent:-9999%; font-size:0; line-height:0; }
-
-
-
-
 /* 레이아웃 */
 .header { width: 100%; margin-top: -50px; border-bottom: 3px solid #ddd; position: fixed; z-index: 10; background: #fff;}
 .container { width: 100%; padding-top: 135px;}
