@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<head>
+<title>레이아웃</title>
+<meta charset="utf-8">
+<style>
+/*
+.onecolLayout { width: 750px; margin: 0 auto; background: yellow;}
+.onecolLayout .content { width: 750px;}
+.onecolLayout .aside,
+.onecolLayout .sidebar { display: none;}
+*/
+
+/*
+.twocolLayout { width: 750px; margin: 0 auto;}
+.twocolLayout .sidebar {  float: left; width: 180px; background: red; }
+.twocolLayout .content { width: 555px; left: left; margin: 0 0 20px 195px; background: yellow;}
+.twocolLayout .aside { display: none;}
+*/
+
+.threecolLayout { width: 1000px; margin: 0 auto; border: 1px solid red; }
+.threecolLayout .content { float: left; width: 270px; margin: 0 0 20px 195px;  background: yellow;}
+.threecolLayout .sidebar { float: left; width: 270px; margin: 0 0 20px 15px; background: pink;}
+
+.threecolLayout .aside { float: left; width: 180px; margin: 0 0 20px -750px; background: red;}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="onecolLayout threecolLayout twocolLayout">
+	<div class="content">content</div>
+	<div class="sidebar">sidebar</div>
+	<div class="aside">aside</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

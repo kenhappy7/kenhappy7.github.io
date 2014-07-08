@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Creating a multi-column drop-down menu</title>
+<style>
+* { margin: 0; padding: 0;}
+html { font-size: 100%;}
+body { font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;}
+
+p { font: 1.1em/1.4 Verdana, Arial, Helvetica, sans-serif;}
+
+
+
+
+.nav { width: 740px; margin: 0 auto; height: 30px; border-bottom: 5px solid #ad3514; }
+
+ul { list-style-type: none;}
+li { position: relative; float: left; background: url("../images/css-tab-rollover-image.gif") no-repeat 0 0;
+    width: 185px; height: 30px;}
+
+.nav a:link, .nav a:visited {display: block; color: #ffffff;
+    text-decoration: none; height: 21px; padding: 9px 0px 0px 30px; }
+
+.nav a:hover { background: url("../images/css-tab-rollover-image.gif") 0 -40px; }
+.nav a:active { background: url("../images/css-tab-rollover-image.gif") 0 -80px;}
+
+#homePage #homePageLink a:link, 
+#homePage #homePageLink a:visited, 
+#servicesPage #servicesPageLink a:link, 
+#servicesPage #servicesPageLink a:visited, 
+#customerSupportPage #customerSupportPageLink a:link, 
+#customerSupportPage #customerSupportPageLink a:visited, 
+#contactDetailsPage #contactDetailsPageLink a:link, 
+#contactDetailsPage #contactDetailsPageLink a:visited{background: url("../images/css-tab-rollover-image.gif") 0 -120px;}
+    
+.nav li ul { border: 2px solid #ad3514; width: 465px; position: absolute; left: -10000px}
+.nav li:hover ul { display: block; left: 0;}
+
+
+
+.nav li li { background: #d27448; height: auto; width: auto; }
+.nav li li li a:link,
+.nav li li li a:visited { padding: 10px; width: 135px;height: auto; }
+
+.nav li li li a:hover { background: #ad3514 !important;}
+.nav li li li a:active {background: #ed1c24;}
+.nav li li li { width: 155px;  height: 3em;  border-bottom: 1px solid #ad3514; }
+
+.nav ul ul ul { border: 0; width: 155px; float: left; position: relative;  }
+    
+#homePage #homePageLink li li a:link,
+#homePage #homePageLink li li a:visited, 
+#servicesPage #servicesPageLink li li a:link,
+#servicesPage #servicesPageLink li li a:visited, 
+#customerSupportPage #customerSupportPageLink li li a:link, 
+#customerSupportPage #customerSupportPageLink li li a:visited, 
+#contactDetailsPage #contactDetailsPageLink li li a:link, 
+#contactDetailsPage #contactDetailsPageLink li li a:visited { background-image: none;} 
+</style>
+</head>
+<body id="servicesPage">
+
+
+
+
+  <div class="wrapper">
+
+      <div class="nav">
+        <div id="navigation">
+          <ul>
+            <li id="homePageLink"><a href="#">Home page</a></li>
+            <li id="servicesPageLink">
+              <a href="#">Services</a>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#">Drop-down link 1.1</a></li>
+                    <li><a href="#">Drop-down link 1.2</a></li>
+                    <li><a href="#">Drop-down link 1.3</a></li>
+                    <li><a href="#">Drop-down link 1.4</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">Drop-down link 2.1</a></li>
+                    <li><a href="#">Drop-down link 2.2</a></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">Drop-down link 3.1</a></li>
+                    <li><a href="#">Drop-down link 3.2</a></li>
+                    <li><a href="#">Drop-down link 3.3</a></li>
+                    <li></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li id="customerSupportPageLink"><a href="#">Customer support</a></li>
+            <li id="contactDetailsPageLink"><a href="#">Contact details</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

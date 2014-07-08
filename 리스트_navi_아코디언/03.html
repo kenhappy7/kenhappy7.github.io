@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vertical navigation bar</title>
+<script src="vertical-navigation-bar.js"></script>
+<style>
+   * { margin: 0; padding: 0;}
+html { font-size: 100%;}
+body { font: 62.5%/1.5 Verdana, Arial, Helvetica, sans-serif;}
+
+#wrapper {font-size: 1.2em; line-height: 1.5em;}
+
+
+nav ul { list-style-type: none; width: 140px; font: 1.2em/1 Arial, Helvetica, sans-serif; }
+
+nav ul ul { font-size: 1em;}
+nav a:link, nav a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    padding: 3px 12px 3px 8px;
+    background-color: #666666;
+    color: #ffffff;
+    border-top: 1px solid #dddddd;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #dddddd;
+    }
+
+nav a:hover {  background-color: #777777;}
+
+nav a:active {
+    padding: 2px 13px 4px 7px;
+    background-color: #444444;
+    color: #eeeeee;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #333333;
+    }
+
+nav li li a:link, nav li li a:visited {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: normal;
+    padding: 3px 3px 3px 17px;
+    background-color: #999999;
+    color: #111111;
+    }
+
+nav li li a:hover { background-color: #aaaaaa;}
+
+nav li li a:active {
+    padding: 2px 4px 4px 16px;
+    background-color: #888888;
+    color: #000000;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #333333;
+    } 
+
+
+
+
+#navigation ul.collapsibleList { display: none;}
+
+
+</style>
+</head>
+<body>
+
+
+  <div id="wrapper">
+    <nav>
+      <ul>
+        <li>
+          <a href="#" onclick="toggle(this); return false;">Section one</a>
+          <ul style="display: block;">
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" onclick="toggle(this); return false;">Section two</a>
+          <ul class="collapsibleList">
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" onclick="toggle(this); return false;">Section three</a>
+          <ul class="collapsibleList">
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+            <li><a href="#">A link to a page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+</body>
+</html>

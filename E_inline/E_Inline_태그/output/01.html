@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>&lt;output&gt;</title>
+<link rel="shortcut icon" href="img/coforward.ico" />
+</head>
+
+<body>
+<h1>&lt;output&gt; - 서식의 출력 요소</h1>
+<form id="outputTest" action="00_action.php" method="post">
+	<label for="unitCost">상품</label>
+    <select id="unitCost" name="unitCost">
+    	<option value="100">상품 A : 단가 100원</option>
+        <option value="200">상품 B : 단가 200원</option>
+        <option value="300">상품 C : 단가 300원</option>
+        <option value="400">상품 D : 단가 400원</option>
+    </select>
+    <label for="count">수량</label>
+    <input id="count" name="count" type="number" />
+    <label for="totalCost">결재금액</label>
+    <output id="totalCost" name="totalCost" onFormInput="value=unitCost.value*count.value"></output>
+    <button type="submit">전송</button>
+</form>
+</body>
+</html>

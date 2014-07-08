@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>배경을 표시할 범위를 지정하고 싶다</title>
+<style>
+div {
+	margin: 20px;
+	padding: 20px;
+	border: 15px solid rgba(000,128,128,0.5) /*rgba(139,000,000,0.5)*/;
+	width: 350px;
+	height: 50px;
+	background-image: url("../images/dia2.gif");
+}
+code {
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+#sample1 {
+	background-clip: border-box;
+}
+#sample2 {
+	background-clip: padding-box;
+}
+#sample3 {
+	background-clip: content-box;
+}
+</style>
+</head>
+<body>
+<div id="sample1"><code>border-box</code></div>
+<div id="sample2"><code>padding-box</code></div>
+<div id="sample3"><code>content-box</code></div>
+</body>
+</html>
+

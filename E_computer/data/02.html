@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>datalist 요소</title>
+	</head>
+	<body>
+		<section>
+			<h1>입력 값 후보</h1>
+			<form action="survey.php" method="post" name="survey">
+				<label for="useBrowser">주로 사용하는 웹 브라우저를 입력해 주세요.</label>
+				<input type="text" id="useBrowser" size="50" list="browser">
+				<datalist id="browser">
+					<option value="크롬" label="Google"></option>
+					<option value="파이어폭스" label="Mozilla"></option>
+					<option value="사파리" label="Apple"></option>
+					<option value="오페라" label="Opera"></option>
+					<option value="인터넷 익스플로러" label="MicroSoft"></option>
+				</datalist>
+			</form>
+		</section>
+	</body>
+</html>

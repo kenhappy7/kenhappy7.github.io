@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<head>
+<title>clear</title>
+<meta charset="utf-8">
+<style>
+.wrapper { float: left; width: 1000px;  }/* float */
+.contents { width: 100%; float: left; } /* width값 주자, width: auto는 위험하다 */
+
+.contents + * { clear: both; } /* float: left, 인접형제 선택자를 활용하자 */
+
+
+/* debug */
+.wrapper { background-color: red;}
+.contents { background-color: yellow;}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="contents">contents</div>
+	<div class="footer">footer</div>
+</div>
+
+
+
+
+ </body>
+</html>

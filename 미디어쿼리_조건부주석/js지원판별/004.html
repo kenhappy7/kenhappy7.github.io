@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>브라우저 html5 지원여부 확인 - 모더나이저 Modernizr</title>
+    <style>
+    	*{margin:0; padding:0;}
+    	body{color:#444; font:11px Verdana,sans-serif;}
+    	hr{margin:8px 0;}
+        .supported{
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 0.5em 1em;
+            line-height: 1;
+        }
+    </style>
+    <script src="js/modernizr-latest.js" charset="utf-8"></script>
+    <script charset="utf-8">
+ 
+    window.onload = supportTest;
+
+        function supportTest(){
+            var resultStr = "";
+            var outDiv = document.getElementById("result");
+           
+            // canvas
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("canvas", Modernizr.canvas)));
+            outDiv.appendChild(document.createElement("hr"));
+                            
+            // canvas text
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("canvas text", Modernizr.canvastext)));
+            outDiv.appendChild(document.createElement("hr"));               
+
+            // video
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("video", Modernizr.video)));
+            outDiv.appendChild(document.createElement("hr"));               
+
+            // video type
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("* video type - ogg", Modernizr.video.ogg)));
+            outDiv.appendChild(document.createElement("hr"));           
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("* video type - h264", Modernizr.video.h264)));
+            outDiv.appendChild(document.createElement("hr"));                   
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("* video type - mpeg", Modernizr.video.mpeg)));
+            outDiv.appendChild(document.createElement("hr"));           
+
+            // local storage
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("local storage", Modernizr.localstorage)));
+            outDiv.appendChild(document.createElement("hr"));                       
+
+            // web worker
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("webworkers", Modernizr.webworkers)));
+            outDiv.appendChild(document.createElement("hr"));                       
+
+            // offline web application (applicationCache)
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("application cache", Modernizr.applicationcache)));
+            outDiv.appendChild(document.createElement("hr"));   
+
+            // location
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("location", Modernizr.geolocation)));
+            outDiv.appendChild(document.createElement("hr"));           
+
+            // placeholder
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("place holder", Modernizr.input.placeholder)));
+            outDiv.appendChild(document.createElement("hr"));       
+
+            // autofocus
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("auto focus", Modernizr.input.autofocus)));
+            outDiv.appendChild(document.createElement("hr"));                   
+
+            // micro data
+            // Modernizr가 지원하지 않음
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("micro data", !!document.getItems)));
+            outDiv.appendChild(document.createElement("hr"));                   
+
+            // input type - search
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - search", Modernizr.inputtypes.search)));
+            outDiv.appendChild(document.createElement("hr"));                           
+
+            // input type - number
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - number", Modernizr.inputtypes.number)));
+            outDiv.appendChild(document.createElement("hr"));                   
+
+            // input type - range
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - range", Modernizr.inputtypes.range)));
+            outDiv.appendChild(document.createElement("hr"));                   
+
+            // input type - color
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - color", Modernizr.inputtypes.color)));
+            outDiv.appendChild(document.createElement("hr"));               
+
+            // input type - tel
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - tel", Modernizr.inputtypes.tel)));
+            outDiv.appendChild(document.createElement("hr"));   
+
+            // input type - url
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - url", Modernizr.inputtypes.url)));
+            outDiv.appendChild(document.createElement("hr"));                   
+
+            // input type - email
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - email", Modernizr.inputtypes.email)));
+            outDiv.appendChild(document.createElement("hr"));                   
+
+            // input type - date
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - date", Modernizr.inputtypes.date)));
+            outDiv.appendChild(document.createElement("hr"));           
+
+            // input type - month
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - month", Modernizr.inputtypes.month)));
+            outDiv.appendChild(document.createElement("hr"));       
+
+            // input type - week
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - week", Modernizr.inputtypes.week)));
+            outDiv.appendChild(document.createElement("hr"));   
+
+            // input type - datetime
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - datetime", Modernizr.inputtypes.datetime)));
+            outDiv.appendChild(document.createElement("hr"));                   
+
+            // input type - datetime-local
+            outDiv.appendChild(document.createTextNode(
+            supportedFunction("input type - datetime-local", Modernizr.inputtypes.datetimelocal)));
+            outDiv.appendChild(document.createElement("hr"));                   
+
+        }
+
+        function supportedFunction(name, supported){
+            var resultStr = name + " : ";
+            if(supported){
+                resultStr += "O";
+            }
+            else{
+                resultStr += "X";   
+            }
+            return resultStr;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="result" class="supported">
+
+    </div>
+
+</body>
+</html>

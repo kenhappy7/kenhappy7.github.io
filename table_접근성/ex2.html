@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<head>
+<title>table element</title>
+<meta charset="utf-8">
+<style>
+table { border: 1px solid #ddd;}
+</style>
+</head>
+<body>
+
+<table>
+<caption>공연정보</caption>
+	<thead>
+		<tr>
+			<th>구분</th>
+			<th id="g">골드</th>
+			<th id="p">프리미엄</th>
+			<th id="v">VIP</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th id="adult">일반요금</th>
+			<td headers="g adult">20,900원</td>
+			<td headers="p adult">31,100</td>
+			<td headers="v adult">34,200</td>
+		</tr>
+		<tr>
+			<th id="children">아동요금</th>
+			<td colspan="3"  headers="g p v children">초등학생까지 일반 요금의 50%</td>
+		</tr>
+		<tr>
+			<th id="time">공연시간</th>
+			<td headers="time">4시간 20분</td>
+			<th id="interval">공연간격</th>
+			<td headers = "interval">20분</td>
+		</tr>
+		<tr>
+			<th id="fistTime">첫공연시간</th>
+			<td headers = "fistTime">6시 00분</td>
+			<th id="lastTime">마지막공연시간</th>
+			<td headers = "lastTime">익일 02시</td>
+		</tr>
+	</tbody>
+</table>
+<!--
+thead의 th의 id와 tbody의 td의 headers로 제목과 내용연결(접근성)
+-->
+
+</body>
+</html>

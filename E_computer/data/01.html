@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>&lt;datalist&gt;</title>
+<link rel="shortcut icon" href="img/coforward.ico" />
+</head>
+
+<body>
+<h1>&lt;datalist&gt; - 입력 추천어의 제공</h1>
+<form id="datalistTest" action="00_action.php" method="post">
+    <label for="keyword">검색어를 입력하세요</label>
+   	<input type="search" id="keyText" name="keyword" list="dataList_id">
+    <datalist id="dataList_id">
+        <option value="html5"></option>
+        <option value="html5 video"></option>
+        <option value="html5 강좌"></option>
+        <option value="html5 canvas"></option>
+        <option value="html5 demo"></option>
+    </datalist>
+    <button type="submit">전송</button> 
+</form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>wai-aria, role</title>
+</head>
+<body role="document">
+
+<div id="wrap">
+	<div id="header">
+		<h1>Logo</h1>
+
+		<h2>Main menu</h2>
+		<ul role="navigation">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</div>
+
+	<hr>
+
+	<div id="container">
+		<div class="snb">
+			<h2>About</h2>
+			<ul role="navigation">
+				<li><a href="#">Message</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Location</a></li>
+			</ul>
+
+			<p role="banner"><a href="#">go to shopping mall</a></p>
+		</div>
+
+		<div id="content" role="main">
+			<h2>Message</h2>
+			<p>text...</p>
+
+			<div class="article" role="article">
+				<h2 role="heading">Work</h2>
+				<ul role="list">
+					<li role="listitem">Design</li>
+					<li role="listitem">Publishing</li>
+					<li role="listitem">Plan</li>
+					<li role="listitem">Out outsourcing</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="footer" role="contentinfo">
+		<address>Seoul, Korea</address>
+		<p>Copyright &copy;webazit. all rights reserved.</p>
+	</div>
+</div>
+
+</body>
+</html>

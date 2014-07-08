@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>longdesc 속성</title>
+</head>
+<body>
+
+<!-- <p>
+	<img src="img/process.gif" alt="1 기증신청 및 접수, 2 기증품 수거, 3 물품분류 및 판매가격 책정, 4 매장/행사장 판매, 5 배분사업을 통한 수익나눔">
+</p> -->
+
+
+<b>'longdesc' 속성 표현 방법 : 브라우저들의 지원이 없는 상태</b>
+<p>
+	<img src="img/process.gif" alt="기증 프로세스" longdesc="desc.html#desc">
+</p>
+<br>
+
+<hr>
+
+
+<b>'longdesc' 속성을 대체하는 방법(1) : 문서 내에 상세 설명 작성</b>
+<p>
+	<a href="#desc">
+		<img src="img/process.gif" alt="기증 프로세스">
+	</a>
+</p>
+<ol id="desc">
+	<li>기증신청 및 접수</li>
+	<li>기증품 수거</li>
+	<li>물품분류 및 판매가격 책정</li>
+	<li>매장/행사장 판매</li>
+	<li>배분사업을 통한 수익나눔</li>
+</ol>
+<br>
+
+<hr>
+
+<b>'longdesc' 속성을 대체하는 방법(2) : &lt;figure&gt; / &lt;figcaption&gt;요소 사용하기</b>
+<p>
+<figure>
+	<img src="img/process.gif" alt="기증 프로세스">
+	<figcaption>
+		<ol>
+			<li>기증신청 및 접수</li>
+			<li>기증품 수거</li>
+			<li>물품분류 및 판매가격 책정</li>
+			<li>매장/행사장 판매</li>
+			<li>배분사업을 통한 수익나눔</li>
+		</ol>
+	</figcaption>
+</figure>
+</p>
+
+</body>
+</html>

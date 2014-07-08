@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<head>
+<title>레이아웃</title>
+<meta charset="utf-8">
+<style>
+body {font: .8em verdana, arial, sans-serif;}
+* {margin:0; padding:0;}
+.wrapper {min-width:760px; max-width:880px;  margin-left:auto; margin-right:auto;} 
+
+.header {width:auto;}
+.threecolwrap { float:left; width:100%;}
+.twocolwrap {
+ 	float:left;
+	width:100%;
+	display:inline; 
+	margin-right:-170px; 
+	}
+.nav {
+ 	float:left;
+ 	width:150px;
+	display:inline; 
+ 	}
+.content {
+ 	width:auto;
+ 	margin-left:150px;
+ 	margin-right:170px;
+ 	height:1%;
+	}
+.promo {
+ 	float:left;
+ 	width:170px; 
+	display:inline; 
+	}
+.footer {
+ 	width:100%;
+ 	clear:both; 
+ 	}
+
+</style>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <div class="inner">header</div>
+  </div>
+  <div class="threecolwrap">  
+    <div class="twocolwrap">
+      <div class="nav">  
+        <div class="inner">nav</div>
+      </div>
+
+      <div class="content">
+        <div class="inner">content</div>
+      </div>
+    </div>
+   
+    <div class="promo">
+      <div class="promo_inner">promo</div> 
+    </div>
+  </div>
+  <div class="footer">footer</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

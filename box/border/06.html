@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>border-image-outset</title>
+<style>
+div {
+position:absolute;
+padding: 35px 20px 20px 20px;
+margin :50px;
+width: 220px;
+height: 85px;
+font-weight :bold;
+text-align: center;
+border: #F00 solid 20px;
+background-color: #CCCCCC;
+background-clip: border-box;
+border-image-source: url(images/border_image.png);
+border-image-slice: 30;
+border-image-width: 20px;
+border-image-repeat: repeat;
+}
+.outset01 {
+top: 190px;
+left: 10px;
+}
+.outset02 {
+top: 190px;
+left: 370px;
+border-image-outset: 20px;
+
+}
+</style>
+</head>
+<body>
+
+			<div class="outset01">border-image</div>
+			<div class="outset02">border-image-outset:20px</div>
+
+
+</body>
+</html>

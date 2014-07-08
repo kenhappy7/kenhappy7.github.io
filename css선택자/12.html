@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>pseudo-elements selector</title>
+<style>
+body{
+	font: 12px/1.6 Verdana,sans-serif;
+}
+p:first-letter{
+	font-size: 2em;
+	font-weight: bold;
+	color: red;
+}
+p:first-line{
+	background-color: lime;
+}
+li:first-child, li:last-child{
+	text-decoration: underline;
+}
+li:nth-child(3){
+	background-color: silver;
+}
+</style>
+</head>
+<body>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, aperiam, blanditiis maxime quisquam eum sunt voluptatibus voluptate earum nihil omnis quis rerum voluptates optio doloremque provident iure cumque quasi nam.</p>
+
+<ul>
+	<li>Lorem ipsum dolor sit amet.</li>
+	<li>Lorem ipsum dolor sit amet.</li>
+	<li>Lorem ipsum dolor sit amet.</li>
+	<li>Lorem ipsum dolor sit amet.</li>
+	<li>Lorem ipsum dolor sit amet.</li>
+	<li>Lorem ipsum dolor sit amet.</li>
+</ul>
+
+</body>
+</html>
+

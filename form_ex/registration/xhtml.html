@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OUIF : Registration Form</title>
+<link rel="stylesheet" type="text/css" href="registration.css"/>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form action="" class="regist">
+	<fieldset>
+		<legend><span class="icon">&raquo;</span> 필수 입력 정보</legend>
+		<ul>
+			<li><label for="id" class="iLabel">아이디</label> <input name="" type="text" id="id" class="iText" /> <span class="btnRegist"><a href="#">중복확인</a></span>
+				<p class="desc"><em>3~20자</em> 사이의 영문+숫자로 구성해야 하며 영문으로 시작해야 합니다.</p>
+			</li>
+			<li><label for="pw1" class="iLabel">비밀번호</label> <input name="" type="password" id="pw1" class="iText" />
+				<span class="desc"><em>6~20자</em>로 구성해 주세요.</span>
+			</li>
+			<li><label for="pw2" class="iLabel">비밀번호 확인</label> <input name="" type="password" id="pw2" class="iText" />
+				<span class="desc">비밀번호를 한 번 더 입력해 주세요.</span>
+			</li>
+			<li><label for="name" class="iLabel">이름</label> <input name="" type="text" id="name" class="iText" />
+				<span class="desc"><em>2~20자</em>로 구성해 주세요.</span>
+			</li>
+			<li><label for="nick" class="iLabel">닉네임</label> <input name="" type="text" id="nick" class="iText" />
+				<span class="desc"><em>2~20자</em>로 구성해 주세요.</span>
+			</li>
+			<li><label for="email" class="iLabel">이메일</label> <input name="" type="text" id="email" class="iText" />
+				<span class="desc">비밀번호 변경 및 찾기 등에 사용됩니다.</span>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend><span class="icon">&raquo;</span> 선택 입력 정보</legend>
+		<ul>
+			<li>
+				<p class="question">이름과 닉네임 가운데 무엇으로 활동하시겠습니까?</p>
+				<p class="answer"><input name="authorName" type="radio" id="useName" class="iRadio" checked="checked" /> <label for="useName">이름</label> <input name="authorName" type="radio" id="useNick" class="iRadio" /> <label for="useNick">닉네임</label></p>
+			</li>
+			<li><label for="profile" class="tLabel">프로필 사진 :</label> <input name="" type="file" id="profile" class="iFile" /> <span class="desc">권장 이미지 크기는 가로 80px 세로 80px 입니다.</span>
+			</li>
+			<li><label for="sign" class="iLabel">서명 : <em>서명을 작성하면 게시물 하단에 서명이 포함 됩니다.</em></label>
+				<textarea name="" rows="5" cols="50" id="sign" class="iText sign"></textarea>
+			</li>
+			<li>
+				<label for="address1" class="iLabel">주소</label> <input name="" type="text" id="address1" class="iText address" />  <span class="btnRegist"><a href="#">주소찾기</a></span><br />
+				<input name="" type="text" id="address2" class="iText address" title="상세 주소" value="상세 주소" onclick="this.value='';" />
+			</li>
+			<li><label for="website" class="iLabel">웹 사이트</label> <input name="" type="text" id="website" class="iText" /> </li>
+			<li><label for="birth" class="iLabel">생일 YYYY-MM-DD</label> <input name="" type="text" id="birth" class="iText" /> </li>
+			<li><label for="openid" class="iLabel">오픈 ID</label> <input name="" type="text" id="openid" class="iText" /> </li>
+			<li><strong class="tLabel">관심분야 :</strong>
+				<input name="" type="checkbox" id="interest1" class="iCheck" /> <label for="interest1">정보기술</label>
+				<input name="" type="checkbox" id="interest2" class="iCheck" /> <label for="interest2">멀티미디어</label>
+				<input name="" type="checkbox" id="interest3" class="iCheck" /> <label for="interest3">사진</label>
+				<input name="" type="checkbox" id="interest4" class="iCheck" /> <label for="interest4">레져</label>
+				<input name="" type="checkbox" id="interest5" class="iCheck" /> <label for="interest5">...</label>
+			</li>
+			<li><strong class="tLabel">메일수신 :</strong> <input name="" type="checkbox" id="optin" class="iCheck" /> <label for="optin">체크하면 공지 메일을 받습니다.</label></li>
+		</ul>
+	</fieldset>
+	<div class="btnArea">
+		<span class="btnRegist strong"><input name="" type="submit" value="등록" /></span>
+	</div>
+</form>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="registration.js"></script>
+</body>
+</html>

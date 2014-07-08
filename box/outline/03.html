@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>outline</title>
+<link href="css/template.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="shortcut icon" href="img/coforward.ico" />
+<script type="text/javascript" src="js/viewCode.js"></script>
+
+<style type="text/css">
+div, p{
+	margin:0;
+	padding:0;
+}
+#exampleSub div{margin-bottom:40px;width:400px;}
+#exampleSub h3{font-family:arial;font-weight:bold;text-transform:uppercase;color:#808285;padding-bottom:5px;}
+
+#exampleSub div p{
+	font-family:arial;
+	font-size:20px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	padding:30px 0;
+}
+#box_coForward{
+	background:#d9da55;
+	border:#999 solid 5px;
+	outline-style:dashed;
+	outline-width:5px;
+	outline-color:#676300;
+	outline-offset:-20px;
+}
+#box_html5Css3{
+	background:#afbc22;
+	border:#999 solid 5px;
+	outline:#676300 double 5px;
+	outline-offset:20px;
+}
+</style>
+</head>
+
+<body>
+<h1>CSS3 : outline-offset</h1>
+<div id="description">
+	<h2>Description</h2>
+    <dl>
+    	<dt>outline</dt>
+        <dd>요소의 아웃라인을 그림 <code>border</code>와는 별개의 속성이며 <code>border</code>를 설정한는 것과 같이 아래의 속성을 단축하여 사용할 수 있음</dd>
+        <dd><code>outline-style</code> : 아웃라인의 형식</dd>
+        <dd><code>outline-color</code> : 아웃라인의 색상</dd>
+        <dd><code>outline-width</code> : 아웃라인의 두께</dd>
+        <dt>outline-offset:[d];</dt>
+        <dd><code>d</code> : 아웃라인을 옵셋시키는 거리로 음수값도 가능함</dd>
+    </dl>
+</div>
+
+<div id="code">
+<h2>Code</h2>
+    <div class="codeArea">
+    &lt;style type="text/css"&gt;
+        #box_coForward{
+            background:#d9da55;
+            border:#999 solid 5px;
+            outline-style:dashed;
+            outline-width:5px;
+            outline-color:#676300;
+            outline-offset:-20px;
+        }
+        #box_html5Css3{
+            background:#afbc22;
+            border:#999 solid 5px;
+            outline:#676300 double 5px;
+            outline-offset:20px;
+        }
+    &lt;/style&gt;      
+    </div>
+</div>
+
+<div id="example">
+	<h2>Example</h2>
+    <div id="exampleSub">
+		<h3>outline-offset</h3>
+        <div id="box_coForward">
+			<p><em class="coforward">co<span>Forward</span></em></p>
+		</div>
+		<div id="box_html5Css3">
+			<p>HTML5 &amp; CSS3</p>
+		</div>
+     </div>
+</div>
+
+<h1>CSS3 : outline</h1>
+<div class="printOnly"><span id="bookName">web on the N screen</span> <em class="coforward">co<span>Forward</span></em></div>
+</body>
+</html>

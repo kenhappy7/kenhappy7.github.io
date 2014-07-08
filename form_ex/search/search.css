@@ -1,0 +1,15 @@
+@charset "utf-8"; 
+
+/* Search */
+.search{ margin:0; padding:0;}
+.search *{ font:12px Tahoma, Geneva, sans-serif;}
+.search fieldset{ margin:0; padding:0; border:0;}
+.search legend{position:absolute; left:0; top:0; width:1px; height:1px; font-size:0; line-height:0; visibility:hidden;}
+.search select{ vertical-align:top; height:23px; *margin-top:2px;}
+.search .iClear{ display:inline-block; position:relative; vertical-align:top;}
+.search .iLabel{ position:absolute; top:4px; left:5px; color:#767676; white-space:nowrap;}
+.search .iText{ padding:4px 4px 3px; *margin:-1px 0; color:#333; border:1px solid #b7b7b7; border-right-color:#e1e1e1; border-bottom-color:#e1e1e1;}
+.search .btnSearch,
+.search .btnSearch input{ position:relative; display:inline-block; vertical-align:top; height:24px; line-height:24px; border:0; overflow:visible; background:url(btnSearch.gif) no-repeat; white-space:nowrap; cursor:pointer;}
+.search .btnSearch{ background-position:left top; margin-right:2px;}
+.search .btnSearch input{ background-position:right top; left:2px; padding:0 8px 0 6px; font-size:12px; font-weight:bold; color:#333;}

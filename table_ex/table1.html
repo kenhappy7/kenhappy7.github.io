@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>table element</title>
+<style>
+body { font-size: small; font-family: Arial, '맑은 고딕';}
+table,th,td{margin:0;padding:0;}
+
+table { width: 100%; border-collapse: collapse; background:url("images/bg_th_center.gif") repeat-x left top; border-bottom: 1px solid #ddd; }
+thead th:first-child { background:url("images/bg_th_left.gif") no-repeat left top;  }
+thead th { height: 28px;}
+thead .last {background:url(images/bg_th_right.gif) no-repeat right top;}
+tbody th,
+tbody td { padding: 10px; border-top: 1px solid #ddd;}
+tbody td { text-align: center; border-left: 1px solid #ddd;}
+
+col { width: 25%;}
+
+</style>
+</head>
+<body>
+<div class="section">
+	<table>
+		<caption><span></span></caption>
+		<colgroup>
+			<col>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>구분</th>
+				<th>가입비</th>
+				<th>기본료</th>
+				<th class="last">통화료</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>차상위계층(총 3만원 한도)</th>
+				<td>면재</td>
+				<td>35%감면</td>
+				<td>35%감면</td>
+			</tr>
+			<tr>
+				<th>기초 생활 수급자(총 3만원 한도)</th>
+				<td>면35%감면제</td>
+				<td>35%감면</td>
+				<td>35%감면</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+
+
+
+</body>
+</html> 

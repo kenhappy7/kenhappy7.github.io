@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>form element</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+<!--
+accept-charset 콘텐츠 속성(2개이상 지정가능
+- 변환되서 서버로 젆송됨)
+-->
+<form action="example.cgi" method="post" accept-charset="UTF-8 EUC-KR">
+	<p>
+		<label>이름:<input type="text" name="name" /></label>
+	</p>
+	<p>
+		<input type="submit" value="전송" />
+	</p>
+</form>
+<hr>
+
+
+<!--
+autocomplete기능을 사용하지 않을때
+- 기본 속성은 on, 자동완성 기능을 지원하는 브라우저에서는 지정하지 않아도 사용할 수 있다
+보안시에는 off로 지정하라
+
+- form요소안에 있는 input요소에도 autocomplete콘텐츠 속성지정했을때는, form요소에 저정했더라도
+input요소의 autocomplete속성이 우선된다
+
+-->
+<form action="example.cgi" method="post" autoaomplete="off">
+	<p>
+		<label>이름:<input type="text" name="name" /></label>
+	</p>
+	<p>
+		<input type="submit" value="전송" />
+	</p>		
+</form>
+<hr>
+
+
+<!--
+enctype
+열거 속성으로 3가지값중에 하나를 지정해야한다
+
+- application/x-www-form-urlencoded(지정안하면 적용되는 값)
+- multipart/form-data(파일을 첨부하는 폼이라면....)
+- text-plain
+-->
+
+<!--
+novalidate콘텐츠 속성
+해당폼과 관련된 컨트롤의 입력 데이터를 검증하지 않음을 표시하는데 사용
+값이 없으면 검증 안함
+-->
+
+
+<form action="exmple.cgi" method="post" novalidate="" target="_blank">
+	<p>
+		<label>이메일 주소:<input type="email" name="email"/></label>
+	</p>
+	<p>
+		<input type="submit" value="전송" />
+	</p>
+</form>
+<!-- 
+target
+- 해당 폼과 관련된 전송 버튼을 나타내는 input요소에 formtarget콘텐츠 속성이 지정되었다면 이것이 채택됨
+다음으로 form요소에 formtarget콘텐츠 속성이 지정되었다면 이것이 채택됨
+마지막으로 head요소에 formtarget콘텐츠 속성이 지정되었다면 이것이 채택됨
+
+어느곳에도 타깃을 지정하지 않았다면 _self와 같음 즉 같은 브라우징 콘텍스트에 전송결과 화면이 표시된다
+이콘텐츠 속성에 지정할수 있는 값은 a요소의 target콘텐츠 속성과 마찬가지이다
+-->
+
+
+
+</body>
+</html>

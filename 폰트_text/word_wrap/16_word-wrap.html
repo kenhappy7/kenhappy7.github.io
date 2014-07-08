@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>word-wrap</title>
+<link href="css/template.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="shortcut icon" href="img/coforward.ico" />
+<script type="text/javascript" src="js/viewCode.js"></script>
+
+<style type="text/css">
+div, p{
+	margin:0;
+	padding:0;
+}
+#exampleSub div{margin-bottom:30px;}
+#exampleSub h3{font-family:arial;font-weight:bold;color:#808285;padding-bottom:5px;}
+
+#textBox p{
+	border:1px solid #ccc;
+	padding:10px;
+	width:80%;
+	margin-bottom:10px;
+}
+#textBox .normal{
+	word-wrap:normal;
+}
+#textBox .break-word{
+	word-wrap:break-word;
+}
+</style>
+</head>
+
+<body>
+<h1>CSS3 : word-wrap</h1>
+<div id="description">
+	<h2>Description</h2>
+    <dl>
+    	<dt>word-wrap:[keyword];</dt>
+        <dd>줄 바꿈 속성을 지정</dd>
+        <dt>속성 값</dt>
+        <dd><code>keyword</code>
+        	<ul>
+            	<li><code>nomal</code> : 공란이 없을경우 줄바꿈을 하지 않음 (기본값)</li>
+                <li><code>break-wrod</code> : 공란이 없어도 요소의 폭보다 문장의 길이가 길어질경우 줄바꿈을 하지 함 (기본값)</li>
+            </ul>
+        </dd>
+    </dl>
+</div>
+
+<div id="code">
+<h2>Code</h2>
+    <div class="codeArea">
+    &lt;style type="text/css"&gt;
+        #textBox p{
+            border:1px solid #ccc;
+            padding:10px;
+            width:90%;
+            margin-bottom:10px;
+        }
+        #textBox .normal{
+            word-wrap:normal;
+        }
+        #textBox .break-word{
+            word-wrap:break-word;
+        }
+    &lt;/style&gt;      
+    </div>
+</div>
+
+<div id="example">
+	<h2>Example</h2>
+    <div id="exampleSub">
+        <div id="textBox">
+        	<h3>nomal</h3>
+			<p class="normal">The_word-wrap_property_was invented_by_Microsoft_and_added_to_CSS3.it_allows_long_words_to_be_able_to_be_broken_and_wrap_onto_the_next_line.</p>
+			<h3>break-word</h3>
+            <p class="break-word">The_word-wrap_property_was invented_by_Microsoft_and_added_to_CSS3.it_allows_long_words_to_be_able_to_be_broken_and_wrap_onto_the_next_line.</p>
+		</div>
+     </div>
+</div>
+
+<h1>CSS3 : word-wrap</h1>
+<div class="printOnly"><span id="bookName">web on the N screen</span> <em class="coforward">co<span>Forward</span></em></div>
+</body>
+</html>

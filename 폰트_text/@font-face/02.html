@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>font-family</title>
+		<style type="text/css">
+			@font-face {
+				font-family: 'Nanum';
+				src: url('webfont/NanumGothic.eot');
+				src: url('webfont/NanumGothic.eot?#iefix') format('embedded-opentype'), url('webfont/NanumGothic.woff') format('woff'), url('webfont/NanumGothic.ttf') format('truetype');
+			}
+			.font {
+				font-family: "맑은 고딕", "돋움", sans-serif;
+			}
+			.webFont {
+				font-family: 'Nanum';
+			}
+		</style>
+	</head>
+	<body>
+		<h1>font-family</h1>
+		<p class="fontFamily01">
+			이 문장은 windows 7에서는 "맑은 고딕체"로, "맑은 고딕체"가 없는 windows XP에서는 "돋움체"가 적용되어 보여지며 둘 다 없을 경우는 CSS범용 폰트 패밀리인 sans-serif로 적용한다.
+		</p>
+		<p class="fontFamily02">
+			이 문장은 "맑은 고딕체"가 있는 windows 7에서 "돋움"체로, "맑은 고딕체"가 없는 windows XP에서도 "돋움체"가 적용되어 보여지며 둘 다 없을 경우는 CSS범용 폰트 패밀리인 sans-serif로 적용한다.
+		</p>
+		<p class="webFont">
+			나눔고딕 서체로 적용됩니다.
+		<p>
+	</body>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>OUIF : Select</title>
+<link rel="stylesheet" type="text/css" href="select.css">
+<style type="text/css">
+h1{ font:20px Tahoma;}
+</style>
+</head>
+<body>
+<h1>Anchor : Drop Down Link</h1>
+<div class="select open" style="width:200px;">
+	<span class="ctrl"><span class="arrow"></span></span>
+	<button type="button" class="myValue">Select Link</button>
+	<ul class="aList">
+		<li><a href="#1">Link_1</a></li>
+		<li><a href="#2">Link_2</a></li>
+		<li><a href="#3">Link_3</a></li>
+	</ul>
+</div>
+<div class="select open" style="width:200px;">
+	<span class="ctrl"><span class="arrow"></span></span>
+	<button type="button" class="myValue">Select Link</button>
+	<ul class="aList">
+		<li><a href="#1">Link_1</a></li>
+		<li><a href="#2">Link_2</a></li>
+		<li><a href="#3">Link_3</a></li>
+	</ul>
+</div>
+<hr>
+<h1>Single Select Form : Radio Input(Emulate Select/Option)</h1>
+<form action="">
+	<div class="select open" style="width:200px;">
+		<span class="ctrl"><span class="arrow"></span></span>
+		<div class="myValue"></div>
+		<ul class="iList">
+			<li><input name="c" id="c0" class="option" type="radio" checked="checked"><label for="c0">Select Option1</label></li>
+			<li><input name="c" id="c1" class="option" type="radio" value=""><label for="c1">Option_1</label></li>
+			<li><input name="c" id="c2" class="option" type="radio" value=""><label for="c2">Option_2</label></li>
+			<li><input name="c" id="c3" class="option" type="radio" value=""><label for="c3">Option_3</label></li>
+		</ul>
+	</div>
+	<div class="select open" style="width:200px;">
+		<span class="ctrl"><span class="arrow"></span></span>
+		<div class="myValue"></div>
+		<ul class="iList">
+			<li><input name="d" id="d0" class="option" type="radio" checked="checked"><label for="d0">Select Option2</label></li>
+			<li><input name="d" id="d1" class="option" type="radio" value=""><label for="d1">Option_1</label></li>
+			<li><input name="d" id="d2" class="option" type="radio" value=""><label for="d2">Option_2</label></li>
+			<li><input name="d" id="d3" class="option" type="radio" value=""><label for="d3">Option_3</label></li>
+		</ul>
+	</div>
+	<button type="submit" class="selectGo">GO</button>
+</form>
+<hr>
+<button type="button" onclick="$('link').attr('href', '')">CSS(X)</button>
+<button type="button" onclick="$('link').attr('href', 'select.css')">CSS(O)</button>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="select.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>background-image</title>
+		<style type="text/css">
+			p {
+				width:200px;
+				height:200px;
+				padding:20px;
+				font-weight:bold;
+				border:1px solid #000;
+				background-size:50px 50px, 100px 50px, 200px 150px;
+				background-position:150px 50px, 100px 70px, right bottom;
+				background-repeat: no-repeat;
+			} 
+
+			.backimg{
+			background-image: url("../images/sun.png"), url("../images/cloud.png"), url("../images/tree.png");
+			}
+		</style>
+	</head>
+	<body>
+		<h1>background-image 속성</h1>
+		<p class="backimg">
+			다중 배경 이미지 적용
+		</p>
+	</body>
+</html>

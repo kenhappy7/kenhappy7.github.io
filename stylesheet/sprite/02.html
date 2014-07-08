@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>sprite기법</title>
+<meta charset="utf-8">
+<style>
+ul, li { margin: 0; padding: 0;}
+ul { list-style: none; }
+li { display: inline-block;}
+
+.list { display:block; width:27px; height:27px; } 
+.list span {  position:absolute; left:-9999px; overflow:hidden; text-indent:-9999%; }
+
+.l1 { background:url("images/social-sprite.png") no-repeat  0 0; }
+.l2 { background:url("images/social-sprite.png") no-repeat  -27px 0; }
+.l3 { background:url("images/social-sprite.png") no-repeat  -54px 0; }
+.l4 { background:url("images/social-sprite.png") no-repeat  -81px 0; }
+.l5 { background:url("images/social-sprite.png") no-repeat  -108px 0; }
+
+.l1:hover, .l1:focus { background:url("images/social-sprite.png") no-repeat  0 -27px;}
+.l2:hover, .l2:focus { background:url("images/social-sprite.png") no-repeat -27px -27px;}
+.l3:hover, .l3:focus { background:url("images/social-sprite.png") no-repeat -54px -27px;}
+.l4:hover, .l4:focus { background:url("images/social-sprite.png") no-repeat -81px -27px;}
+.l5:hover, .l5:focus { background:url("images/social-sprite.png") no-repeat -108px -27px;}
+</style>
+</head>
+<body>
+
+
+	<ul class="submenu"> 
+		<li><a href="#" class="list l1"><span>facebook</span></a></li>
+		<li><a href="#" class="list l2"><span>twitter</span></a></li>
+		<li><a href="#" class="list l3"><span>google</span></a></li>
+		<li><a href="#" class="list l4"><span>you-tube</span></a></li>
+		<li><a href="#" class="list l5"><span>kakao-talk</span></a></li>
+	</ul>
+
+
+
+
+</body>
+</html>
+
+

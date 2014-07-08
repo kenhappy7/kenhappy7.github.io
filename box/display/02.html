@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>display</title>
+</head>
+<style>
+p, span {
+	border: #F00 solid 2px;
+	padding:5px;
+}
+.block { display: block;}
+.inline { display: inline;}
+.inline-block { display: inline-block; width: 200px;}
+.none { display: none; width: 200px;}
+.run-in{display:run-in;}
+.list-item{
+	list-style-type:disc;
+	display:list-item;
+	margin-left:2em;
+}
+.table{ display:table;}
+.table-caption{
+	display:table-caption;
+	width:400px;
+	text-align:center;
+	margin-bottom:10px;
+}
+.table-row{ display:table-row}
+.table-header{
+	display:table-header;
+	border:2px solid #00f;
+	width:200px;
+	padding:10px;
+	text-align:center;
+	margin-right:2px;
+}
+.table-cell{
+	display:table-cell;
+	border:2px solid #00f;
+	width:200px;
+	padding:10px;
+	text-align:center;
+}
+hr{ margin:15px 0;}
+</style>
+<body>
+	
+	<p class="block">block</p>
+	<hr>
+
+
+	<div class="inline"><span>inline</span> <span>inline</span></div>
+	<hr>
+	
+
+	<p class="inline-block">inline-block</p>
+	<hr>
+
+
+	<p class="none">none</p>
+	<div>
+		<div class="run-in"> run-in box </div>
+		<span>형제 요소가 인라인 박스인 경우</span>
+	</div>
+	<hr>
+
+
+
+	<div>
+		<div class="run-in"> run-in box </div>
+		<div>형제 요소가 블록 박스인 경우</div>
+	</div>
+	<hr>
+
+
+
+
+	<div>
+		<div class="list-item">목록 항목 입니다.</div>
+		<div class="list-item">목록 항목 입니다.</div>
+	</div>
+	<hr>
+
+
+
+	<div class="table">
+		<div class="table-caption">테이블 캡션으로 변환</div>
+		<div class="table-row">
+			<div class="table-header">테이블 제목셀로 변환</div>
+			<div class="table-cell">테이블 내용셀로 변환</div>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+</html>

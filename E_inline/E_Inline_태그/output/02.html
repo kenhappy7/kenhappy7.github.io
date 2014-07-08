@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>output 요소</title>
+	</head>
+	<body>
+		<section>
+			<h1>출력 값</h1>
+			<form action="formula.php" method="post" name="formula">
+				<input id="a" type="number" title="입력값 A">
+				+
+				<input id="b" type="number" title="입력값 B">
+				= <output onforminput="value = a.valueAsNumber + b.valueAsNumber" title="A 더하기 B의 계산 결과"></output>
+				<br>
+				<br>
+				<input id="bar" type="range" title="범위선택">
+				+
+				<output onforminput="value = bar.value" title="선택한 범위 값">
+					0
+				</output>
+			</form>
+		</section>
+	</body>
+</html>

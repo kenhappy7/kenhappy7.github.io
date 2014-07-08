@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3단 고정</title>
+<style>
+*{  margin:0; padding:0; }
+body{ font:75%/1.2  sans-serif, verdana; }
+
+
+.header{ width:1000px; height:100px; margin:0 auto; background-color: yellow; }
+.container { width:1000px;  margin:0 auto; background-color: red; }
+
+	
+.contents { min-height:300px; width:100%; position:relative;}
+
+.box1 { position:absolute; left:0; top:0; width:250px; background-color: #ddd; }
+.box2 { position:relative; left:250px; top:0; width:500px; background-color:#ddd; }
+.box3 { position:absolute; right:0; top:0; width:250px; background-color: #ddd; }
+
+.footer{ width:1000px; height:95px; margin:0 auto; background-color: green; }
+</style>
+</head>
+<body>
+
+
+	<div class="wrapper">
+		<div class="header">header</div>
+		<div class="container">  
+			<div class="contents">
+				<div class="box1">section1</div>
+				<div class="box2">section2</div>
+				<div class="box3">section3</div>
+			</div>
+		</div>
+		<div class="footer">footer</div>
+	</div>
+
+
+</body>
+</html>
+
+

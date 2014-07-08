@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>text-overflow</title>
+<link href="css/template.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="shortcut icon" href="img/coforward.ico" />
+<script type="text/javascript" src="js/viewCode.js"></script>
+
+<style type="text/css">
+div, p{
+	margin:0;
+	padding:0;
+}
+#exampleSub div{
+	margin-bottom:30px;
+}
+#exampleSub h3{font-family:arial;font-weight:bold;text-transform:uppercase;color:#808285;padding-bottom:5px;}
+
+#textBox p{
+	margin:0 auto;
+	margin-bottom:10px;
+	border:1px solid #ccc;
+	padding:10px;
+	width:90%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#textBox .clipText{
+	text-overflow:clip;
+	 -o-text-overflow:clip;
+}
+#textBox .ellipsisText{
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+}
+</style>
+</head>
+
+<body>
+<h1>CSS3 : text-overflow</h1>
+<div id="description">
+	<h2>Description</h2>
+    <dl>
+    	<dt>text-overflow:[keyword];</dt>
+        <dd>오버플로어 되는 텍스트의 표시를 지정</dd>
+        <dt>속성 값</dt>
+        <dd><code>clip</code> : 지정된 영역의 크기로 잘라낸다.</dd>
+        <dd><code>ellipsis</code> : 지정된 영역의 크기에 맞게 말줄임표를 표시한다.</dd>
+    </dl>
+</div>
+
+<div id="code">
+<h2>Code</h2>
+    <div class="codeArea">
+    &lt;style type="text/css"&gt;
+        #textBox p{
+            margin:0 auto;
+            margin-bottom:10px;
+            border:1px solid #ccc;
+            padding:10px;
+            width:90%;
+            white-space:nowrap;
+            overflow:hidden;
+        }
+        #textBox .clipText{
+            text-overflow:clip;
+             -o-text-overflow:clip;
+        }
+        #textBox .ellipsisText{
+            text-overflow:ellipsis;
+            -o-text-overflow:ellipsis;
+        }
+            &lt;/style&gt;      
+    </div>
+</div>
+
+<div id="example">
+	<h2>Example</h2>
+    <div id="exampleSub">
+        <div id="textBox">
+        	<h3>clip</h3>
+			<p class="clipText">영역을 벗어나는 텍스트를 오버플로된 텍스트라 하는데 이렇게 오버플로된  텍스트를 생략부호(...)로 처리하는 속성입니다.</p>
+			<h3>ellipsis</h3>
+            <p class="ellipsisText">영역을 벗어나는 텍스트를 오버플로된 텍스트라 하는데 이렇게 오버플로된  텍스트를 생략부호(...)로 처리하는 속성입니다.</p>
+		</div>
+     </div>
+</div>
+
+<h1>CSS3 : text-overflow</h1>
+<div class="printOnly"><span id="bookName">web on the N screen</span> <em class="coforward">co<span>Forward</span></em></div>
+</body>
+</html>

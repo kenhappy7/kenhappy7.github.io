@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>text-shadow</title>
+<link href="css/template.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="shortcut icon" href="img/coforward.ico" />
+<script type="text/javascript" src="js/viewCode.js"></script>
+
+<style type="text/css">
+div, p{
+	margin:0;
+	padding:0;
+}
+#exampleSub div{margin-bottom:30px;}
+#exampleSub h3{font-family:arial;font-weight:bold;text-transform:uppercase;color:#808285;padding-bottom:5px;}
+
+#exampleSub div p{
+	font-family:arial;
+	font-size:40px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	padding:25px;
+}
+#html5Css3Text{
+	background:#afbc22;
+	text-shadow:3px 3px 5px #000;
+}
+#coforwardText{
+	background:#aaa;
+	text-shadow:
+		0 0 4px #ccc,
+		0 -3px 4px #ff3,
+		1px -6px 6px #fd3,
+		-1px -9px 11px #f80,
+		1px -12px 18px #f20;
+}
+</style>
+</head>
+
+<body>
+<h1>CSS3 : text-shadow</h1>
+<div id="description">
+	<h2>Description</h2>
+    <dl>
+    	<dt>text-shadow:[dx] [dy] [bulr] [color];</dt>
+        <dd>텍스트에 그림자를 지정함</dd>
+        <dt>속성 값</dt>
+        <dd><code>dx</code> : 본체와 그림자의 가로방향 거리</dd>
+        <dd><code>dy</code> : 본체와 그림자의 세로방향 거리</dd>
+        <dd><code>bulr</code> : 그림자의 흐려짐 정도</dd>
+        <dd><code>color</code> : 그림자의 색상</dd>
+    </dl>
+</div>
+
+<div id="code">
+<h2>Code</h2>
+    <div class="codeArea">
+    &lt;style type="text/css"&gt;
+        #html5Css3Text{
+            background:#afbc22;
+            text-shadow:3px 3px 5px #000;
+        }
+        #coforwardText{
+            background:#aaa;
+            text-shadow:
+                0 0 4px #ccc,
+                0 -3px 4px #ff3,
+                1px -6px 6px #fd3,
+                -1px -9px 11px #f80,
+                1px -12px 18px #f20;
+        }
+    &lt;/style&gt;      
+    </div>
+</div>
+
+<div id="example">
+	<h2>Example</h2>
+    <div id="exampleSub">
+        <div id="html5Css3Text">
+			<p>HTML5 &amp; CSS3</p>
+		</div>
+        <div id="coforwardText">
+			<p> <em class="coforward">co<span>Forward</span></em></p>
+		</div>
+     </div>
+</div>
+
+<h1>CSS3 : text-shadow</h1>
+<div class="printOnly"><span id="bookName">web on the N screen</span> <em class="coforward">co<span>Forward</span></em></div>
+</body>
+</html>

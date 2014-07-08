@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>아코디언 메뉴</title>
+<style>
+* { margin: 0; padding: 0; font : 12px/20px 돋움;}
+.accordionMenu { color:#424242; background:#fff; padding:10px;width:500px;}	
+h2 { margin:5px 0; padding:0;}
+
+:target h2 a, 
+h2 a:focus,
+h2 a:hover,
+h2 a:active {
+	color:#fff;	
+	background:#2288dd;
+	background:-moz-linear-gradient(top,#6bb2ff,#2288dd);
+	background:-webkit-gradient(linear,left top, left bottom, from(#6bb2ff), to(#2288dd));
+		 filter: progid:DXImageTransform.Microsoft.gradient
+  (startColorstr=#ff6bb2ff, endColorstr=#ff2288dd);
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient
+  (startColorstr=#ff6bb2ff, endColorstr=#ff2288dd)";
+ }
+
+
+a { display:block; color:#424242; text-shadow:2px 2px 2px #aeaeae; text-decoration:none; padding:10px;
+	background:#8f8f8f;
+	background:-moz-linear-gradient(top,#cecece,#8f8f8f);
+	background:-webkit-gradient(linear,left top, left bottom, from(#cecece), to(#8f8f8f));
+	filter: progid:DXImageTransform.Microsoft.gradient
+  (startColorstr=#ffcecece, endColorstr=#ff8f8f8f);
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+  (startColorstr=#ffcecece, endColorstr=#f8f8f8f)";
+	
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;	
+}
+
+p { padding:0 10px; height:0; overflow:hidden;
+	-moz-transition:height 0.5s ease-in;
+	-webkit-transition:height 0.5s ease-in;
+	-o-transition:hegith 0.5s ease-in;
+	tansition:height 0.5s ease-in;	
+}
+
+:target p { overflow: auto;	height: 50px;}
+</style>
+</head>
+<body>
+
+
+<div class="accordionMenu">
+	<div id="html5" class="menuSection">
+		<h2><a href="#html5">HTML5</a></h2>
+        <p>HTML5</p>
+	</div>
+	<div id="css3" class="menuSection">
+		<h2><a href="#css3">CSS3</a></h2>
+        <p>CSS</p>
+	</div>
+	<div id="api" class="menuSection">
+		<h2><a href="#api">API</a></h2>
+        <p>API</p>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>

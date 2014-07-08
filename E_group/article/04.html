@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>article</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+
+
+<h1>블로그</h1>
+<article itemscope itemtype="http://kkk.org/">
+	<header>
+		<h1 itemprop="style">강남스타일</h1>
+		<p>
+			<time itemprop="datePublished" datetime="2014-06-12">2014-0-12</time>
+		</p>
+		<link itemprop="url" href="?comments=0">
+	</header>
+	<p>어쩌고 저쩌고</p>
+
+	<section>
+		<h1>댓글</h1>
+		<article itemscope itemtype="http://kkk.org/" id="a1"> 
+			<link itemprop="url" href="#a1"><!---->
+			<footer>
+				<p>by:
+					<span itemprop="visitor" itemscope itemtype="http://aaa.org">
+						<span itemprop="name">aaa</span>
+					</span>
+				</p>
+				<p>
+					<time itemprop="commentTime" datetime="2014-06-24">20분전에 글달림</time>
+				</p>
+			</footer>
+		</article>
+	</section><!-- 반복 -->
+</article>
+
+
+
+</body>
+</html>
+<!--
+
+1.블로그
+	1.강남스타일
+		1.댓글
+			1.Untitled Section
+-->

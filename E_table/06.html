@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>table, table-layout</title>
+<style type="text/css">
+body,h1,h2,h3{
+	font-family: tahoma,sans-serif;
+	font-size: 12px;
+}
+.fixed{
+	table-layout: fixed;
+}
+</style>
+</head>
+<body>
+
+<h1>지정하지 않음</h1>
+<table width="400" border="1">
+	<tbody>
+		<tr>
+			<td>Lorem ipsum dolor sit amet.</td>
+			<td>Lorem ipsum.</td>
+		</tr>
+	</tbody>
+</table>
+
+<h1>fixed 지정</h1>
+<table width="400" border="1" class="fixed">
+	<tbody>
+		<tr>
+			<td>Lorem ipsum dolor sit amet.</td>
+			<td>Lorem ipsum.</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

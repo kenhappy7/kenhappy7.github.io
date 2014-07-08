@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>웹표준으로 마크업하기</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var add = $(".newwin").attr("href");
+		$(".newwin").click(function(){
+			window.open(add,'','width=400,height=500');
+			return false;
+		});
+	});
+	</script>	
+</head>
+<body>
+
+<p><a href="http://daum.net" class="newwin">event viewer</a></p>
+
+<hr>
+
+<p>웹표준에서는 표현을 위한 자바스크립트를 요소에서 분리해야 합니다.</p>
+
+</body>
+</html>

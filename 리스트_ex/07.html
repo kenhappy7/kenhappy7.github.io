@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>리스트 활용</title>
+<meta charset="utf-8">
+<style>
+h3, ul, li, p { margin: 0; padding: 0;}
+li { list-style: none;}
+a { font-size: 12px; }
+
+
+h3 { font-size: 12px;}
+.menus { position: relative; width: 850px; height: 45px; padding-top: 410px; color: #bababa;  font-weight: bold; background: #636560; }
+.menus h3 { float: left; height: 45px;  line-height:25px; border-left: 1px solid #454743;  color: #bababa;  }
+.menus span { position: absolute; top: 0; left: 0; width: 850px; height: 410px; padding: 0; }
+.menus span a { display: block; width: 850px; height: 410px; padding: 0;  }
+
+.menus li {  float:left; position:relative;  height: 45px; line-height:25px;  color: #bababa;  }
+.menus a { display:block; width: 85px; padding: 10px; height: 25px; color: #bababa; text-decoration: none;} 
+.menus .list a:hover { background: url("images/bg_imgOn.gif") no-repeat 30px 0;  color: #fff;   }
+.menus .list > a:hover { padding-right:325px;  }
+
+.menus li ul { position:absolute; top: 0; left: 105px;  display:none; }    
+.menus li:hover ul { display:block; width: 600px;  }             
+</style>
+</head>
+<body>
+
+<div class="menus">
+	<h3><a>리스트01</a></h3>
+	<h3><a>리스트02</a>
+		   <span class="img1"><a href="#a"><img src="images/visual1.jpg" alt=""></a></span>
+	</h3>
+	<ul>
+		<li class="list"><a>리스트03</a>
+			<ul>
+				<li><a>서브리스트01</a></li>
+				<li><a>서브리스트02</a></li>
+				<li><a>서브리스트03</a></li>
+		   </ul>
+	   </li>
+		<li class="list"><a>리스트04</a>
+			<ul>
+				<li><a>서브리스트01</a></li>
+				<li><a>서브리스트02</a></li>
+				<li><a>서브리스트03</a></li>
+		   </ul>
+		</li>	
+		<li class="list"><a>리스트05</a>
+			<ul>
+				<li><a>서브리스트01</a></li>
+				<li><a>서브리스트02</a></li>
+				<li><a>서브리스트03</a></li>
+		   </ul>
+		</li>	
+	</ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>화면비례형</title>
+<meta charset="utf-8">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 62.5%/1.6 "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+  background-color:#D4D4D4;
+}
+
+body {
+  text-align: center; 
+  min-width: 760px;
+}
+
+.wrapper {
+  width: 85%; 
+  margin: 0 auto; 
+  text-align: left; 
+}
+
+.nav { 
+  width: 23%;
+  float: left;
+}
+
+
+.container { 
+  width: 75%; 
+  float: right; 
+}
+
+/* content를 100%로 잡고 다시 계산 */
+.contents { 
+  width: 66%; 
+  margin: 0; 
+  float: left; 
+} 
+.aside { 
+  width: 31%;
+  min-width: 10em;
+  display: inline; 
+  float: right; 
+} 
+
+.footer { 
+  clear: both; 
+}
+
+
+.mainNav, .secondaryContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.mainNav *, .secondaryContent * { 
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+.mainNav * *, .secondaryContent * * { 
+ padding-left: 0;
+ padding-right: 0;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">header</div> 
+  <div class="container"> 
+    <div class="contents">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ligula turpis, aliquet ut, congue et, suscipit a, ipsum. Suspendisse urna purus, varius non, iaculis sit amet, vehicula vitae, tortor. Donec wisi quam, ornare non, fermentum quis, egestas sit amet, metus.</p>
+    </div>  
+
+    <div class="aside">
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ligula turpis, aliquet ut, congue et, suscipit a, ipsum. Suspendisse urna purus, varius non, iaculis sit amet, vehicula vitae, tortor. Donec wisi quam, ornare non, fermentum quis, egestas sit amet, metus.</p>
+    </div>
+  </div>
+  <div class="nav"> 
+     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam ligula turpis, aliquet ut, congue et, suscipit a, ipsum. Suspendisse urna purus, varius non, iaculis sit amet, vehicula vitae, tortor. Donec wisi quam, ornare non, fermentum quis, egestas sit amet, metus.</p>
+  </div> 
+  <div class="footer">footer</div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
