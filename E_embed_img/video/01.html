@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>video</title>
+<meta charset="utf-8">
+</head>
+<body>
+
+<video width="604" height="480" controls preload="auto" loop poster="landscape.jpg">
+	<source src="video/video.ogv" type="video/ogg">
+	<source src="video/video.mp4" type="video/mp4">
+	html5이하 환경에서는 지원하지 않습니다.
+</video>
+
+
+
+
+<video width="604" height="480" controls autoplay preload="auto" loop poster="landscape.jpg">
+	<source src="video/video.ogv" type="video/ogg">
+	<source src="video/video.mp4" type="video/mp4">
+	html5이하 환경에서는 지원하지 않습니다.
+	<object width="640" height="480" type="applocation/x-shockwave-flash" data="flashvideo.swf">
+		<param name="movie" value="flashvideo.swf">
+		<param name="flashvars" value="controlbar=over&amp;images=poster.jpg&amp;file=video/video.mp4">
+		<img src="poster.jpg" width="640" height="480" alt="_title" title="no video playback capabilities,please download the video below">
+	</object>
+	<p>
+		<b>download video:</b>mp4 format:<a href="video.mp4">MP4</a>
+		ogg format:<a href="video.ogv">OGG</a>
+	</p>
+</video>
+
+
+
+
+
+
+
+</body>
+</html>

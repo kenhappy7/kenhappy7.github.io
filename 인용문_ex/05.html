@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Solution 4-3: quotation</title>
+        
+        <style>
+
+            blockquote {
+            padding:10px;
+            margin-left:60px;
+            position:relative;
+            quotes: '\201C' '\201D';
+            font-size:64px;
+            line-height:64px;
+            width:320px;
+            }
+
+            blockquote::before , blockquote::after {
+            font-size: 500px;
+            color: #eee;
+            font-family: Arial, san-serif;
+            position: absolute;
+            z-index: -1;
+            }
+            
+            blockquote::before {
+            content: open-quote;
+            left:-60px;
+            top: 110px;
+            }
+             
+            blockquote::after {
+            content: close-quote;
+            margin-top: 170px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <blockquote>Left aligned design</blockquote>
+    </body>
+</html>

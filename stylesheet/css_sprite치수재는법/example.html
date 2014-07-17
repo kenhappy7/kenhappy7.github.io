@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+	<head>
+		<title>CSS 스프라이트</title>
+  		<meta charset="utf-8" />
+  		<link rel="stylesheet" href="site.css"   media="all" />
+  		<link rel="stylesheet" href="page.css"   media="all" />
+  		<link rel="stylesheet" href="print.css"  media="print" />
+
+</head>
+ 
+ <body>
+ 
+<h1>CSS 스프라이트</h1>
+
+<div id="nw">
+  <img src="nw.gif" width="290" height="200" alt="북서 아메리카" />
+
+  <a id="olympia" class="bang-bg" href="olympia.html" title="올림피아">
+    <span class="screenreader-only">올림피아</span></a>
+
+  <a id="salem" class="flag-bg" href="salem.html" title="세일럼">
+    <span class="screenreader-only">세일럼</span></a>
+
+  <a id="boise" class="star-bg" href="boise.html" title="보이시">
+    <span class="screenreader-only">보이시</span></a>
+</div>
+
+<!-- 다음 코드는 책에는 생략했지만, 여기에는 완전한 스프라이트 배경 이미지 좌표를 나타내기 위해 넣었다. -->
+<img  id="sprite" src="bt.gif" alt="스프라이트 이미지" />
+<span id="sprite-h">0 -16 -32 -48 -64 -80 -96 -112 </span>
+<span id="sprite-v">&nbsp;&nbsp;0<br />-16<br />-32<br />-48<br />-64<br />-80<br />-96<br />-112
+                       <br />-128<br />-144<br />-160<br />-176<br />-192
+                       <br />-208<br />-224<br />-240</span>
+
+ </body>
+</html>
